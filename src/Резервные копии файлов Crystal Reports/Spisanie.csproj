@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0AAAE263-1916-4F9F-83A6-9498556BC308}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spisanie</RootNamespace>
+    <AssemblyName>Spisanie</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Framework, Version=1.0.4.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuhOst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuhOst.Designer.cs">
+      <DependentUpon>BuhOst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conv.cs" />
+    <Compile Include="crBuhSum.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crBuhSum.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crNaklmain.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crNaklmain.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crSF.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSF.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crSpis.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSpis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsReports.cs">
+      <DependentUpon>dsReports.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsReports.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReports.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmClosePartPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClosePartPeriod.Designer.cs">
+      <DependentUpon>frmClosePartPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvResults.Designer.cs">
+      <DependentUpon>InvResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Load.Designer.cs">
+      <DependentUpon>Load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs" />
+    <Compile Include="NaklO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NaklO.designer.cs">
+      <DependentUpon>NaklO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaklP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NaklP.Designer.cs">
+      <DependentUpon>NaklP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaklPc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NaklPc.designer.cs">
+      <DependentUpon>NaklPc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaklsO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NaklsO.designer.cs">
+      <DependentUpon>NaklsO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaklsP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NaklsP.Designer.cs">
+      <DependentUpon>NaklsP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaklsPc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NaklsPc.designer.cs">
+      <DependentUpon>NaklsPc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaklsSp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NaklsSp.designer.cs">
+      <DependentUpon>NaklsSp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaklsV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NaklsV.designer.cs">
+      <DependentUpon>NaklsV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaklV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NaklV.designer.cs">
+      <DependentUpon>NaklV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nakl_Sp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nakl_Sp.designer.cs">
+      <DependentUpon>Nakl_Sp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizations.Designer.cs">
+      <DependentUpon>Organizations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeriodControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeriodControl.Designer.cs">
+      <DependentUpon>PeriodControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintPreView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintPreView.Designer.cs">
+      <DependentUpon>PrintPreView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedures.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BuhOst.resx">
+      <DependentUpon>BuhOst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crBuhSum.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crBuhSum.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crNaklmain.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crNaklmain.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crSF.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSF.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crSpis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSpis.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClosePartPeriod.resx">
+      <DependentUpon>frmClosePartPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvResults.resx">
+      <DependentUpon>InvResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Load.resx">
+      <DependentUpon>Load.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NaklO.resx">
+      <DependentUpon>NaklO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NaklP.resx">
+      <DependentUpon>NaklP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NaklPc.resx">
+      <DependentUpon>NaklPc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NaklsO.resx">
+      <DependentUpon>NaklsO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NaklsP.resx">
+      <DependentUpon>NaklsP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NaklsPc.resx">
+      <DependentUpon>NaklsPc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NaklsSp.resx">
+      <DependentUpon>NaklsSp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NaklsV.resx">
+      <DependentUpon>NaklsV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NaklV.resx">
+      <DependentUpon>NaklV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nakl_Sp.resx">
+      <DependentUpon>Nakl_Sp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizations.resx">
+      <DependentUpon>Organizations.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeriodControl.resx">
+      <DependentUpon>PeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPreView.resx">
+      <DependentUpon>PrintPreView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpravOrg.resx">
+      <DependentUpon>SpravOrg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeBlock.resx">
+      <DependentUpon>TimeBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zero.resx">
+      <DependentUpon>Zero.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SpravOrg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpravOrg.Designer.cs">
+      <DependentUpon>SpravOrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeBlock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeBlock.Designer.cs">
+      <DependentUpon>TimeBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zero.Designer.cs">
+      <DependentUpon>Zero.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\pict_close.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\pict_save.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\WZPRINT.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\pict_delete.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\pict_edit.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dsReports.xsc">
+      <DependentUpon>dsReports.xsd</DependentUpon>
+    </None>
+    <None Include="dsReports.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReports.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsReports.xss">
+      <DependentUpon>dsReports.xsd</DependentUpon>
+    </None>
+    <None Include="Icons\pict_ok.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\pict_excel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\application_get.png" />
+    <Content Include="Icons\application_put.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

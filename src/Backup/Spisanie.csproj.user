@@ -1,0 +1,10 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferencePath>C:\Program Files\Business Objects\Common\2.8\managed\</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>true</EnableSQLServerDebugging>
+    <StartArguments>106 "Инвентаризационные списания-Заявитель" 192.168.5.85 OPR_dbase1 MrSpisanie 12369 "Анастасиади П. Г." БГЛ "Заявитель" ГСТ 2 "тестовая OPR_dbase1 isi_15" 42</StartArguments>
+  </PropertyGroup>
+</Project>

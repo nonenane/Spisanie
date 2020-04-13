@@ -1,0 +1,877 @@
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\ResolveAssemblyReference.cache
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.mainForm.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.Properties.Resources.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+F:\Work\c# projects\Spisanie\Spisanie\bin\Debug\Spisanie.exe
+F:\Work\c# projects\Spisanie\Spisanie\bin\Debug\Spisanie.pdb
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.exe
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.pdb
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmLoad.resources
+R:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.exe
+R:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.pdb
+R:\Work\c# projects\Spisanie\Spisanie\obj\Debug\ResolveAssemblyReference.cache
+R:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmLoad.resources
+R:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.mainForm.resources
+R:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.Properties.Resources.resources
+R:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmConnect.resources
+R:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+R:\Work\c# projects\Spisanie\Spisanie\bin\Debug\Spisanie.exe
+R:\Work\c# projects\Spisanie\Spisanie\bin\Debug\Spisanie.pdb
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsP.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsO.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsPc.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsV.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsSp.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmSpravOrg.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklO.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklP.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklPc.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklV.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNakl_Sp.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmOrganizations.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmPrint.resources
+F:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmPrintPreView.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.exe
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.pdb
+H:\Work\c# projects\Spisanie\Spisanie\bin\Debug\Spisanie.exe
+H:\Work\c# projects\Spisanie\Spisanie\bin\Debug\Spisanie.pdb
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\ResolveAssemblyReference.cache
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmLoad.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.mainForm.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklO.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklP.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklPc.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsO.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsP.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsPc.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsSp.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsV.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklV.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNakl_Sp.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmOrganizations.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmPaths.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmPrint.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmPrintPreView.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.Properties.Resources.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmSpravOrg.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmConnect.resources
+H:\Work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.exe
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.pdb
+C:\Spisanie\Spisanie\bin\Debug\Spisanie.exe
+C:\Spisanie\Spisanie\bin\Debug\Spisanie.pdb
+C:\Spisanie\Spisanie\obj\Debug\ResolveAssemblyReference.cache
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmLoad.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.mainForm.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklO.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklP.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklPc.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsO.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsP.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsPc.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsSp.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsV.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklV.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmNakl_Sp.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmOrganizations.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmPaths.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmPrint.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmPrintPreView.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.Properties.Resources.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmSpravOrg.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.frmConnect.resources
+C:\Spisanie\Spisanie\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+F:\work\c# projects\Spisanie\Spisanie\bin\Debug\Framework.dll
+F:\work\c# projects\Spisanie\Spisanie\bin\Debug\Interop.Excel.dll
+F:\work\c# projects\Spisanie\Spisanie\bin\Debug\office.dll
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.exe
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.pdb
+G:\work\c# projects\Spisanie\Spisanie\bin\Debug\Spisanie.exe
+G:\work\c# projects\Spisanie\Spisanie\bin\Debug\Spisanie.pdb
+G:\work\c# projects\Spisanie\Spisanie\bin\Debug\Framework.dll
+G:\work\c# projects\Spisanie\Spisanie\bin\Debug\Interop.Excel.dll
+G:\work\c# projects\Spisanie\Spisanie\bin\Debug\office.dll
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\ResolveAssemblyReference.cache
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmLoad.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.mainForm.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklO.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklP.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklPc.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsO.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsP.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsPc.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsSp.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklsV.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNaklV.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmNakl_Sp.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmOrganizations.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmPrint.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmPrintPreView.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.Properties.Resources.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.frmSpravOrg.resources
+G:\work\c# projects\Spisanie\Spisanie\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\348\src\bin\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\348\src\bin\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\348\src\bin\Debug\Framework.dll
+D:\Programs\Spisanie\branches\348\src\bin\Debug\Interop.Excel.dll
+D:\Programs\Spisanie\branches\348\src\bin\Debug\office.dll
+D:\Programs\Spisanie\branches\348\src\obj\Debug\ResolveAssemblyReference.cache
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmLoad.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.mainForm.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmPrint.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\Programs\Spisanie\branches\348\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\Programs\Spisanie\branches\379\src\obj\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\379\src\obj\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\379\src\bin\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\379\src\bin\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\379\src\bin\Debug\Framework.dll
+C:\Documents and Settings\Mito\Рабочий стол\379\src\bin\Debug\Interop.Excel.dll
+C:\Documents and Settings\Mito\Рабочий стол\379\src\bin\Debug\office.dll
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmLoad.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.mainForm.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmNaklO.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmNaklP.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmNaklPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmNaklsO.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmNaklsP.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmNaklsPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmNaklsSp.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmNaklsV.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmNaklV.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmOrganizations.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmPrint.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmPrintPreView.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.Properties.Resources.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.frmSpravOrg.resources
+C:\Documents and Settings\Mito\Рабочий стол\379\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmLoad.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.mainForm.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmNaklO.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmNaklP.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmNaklPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmNaklsO.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmNaklsP.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmNaklsPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmNaklsSp.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmNaklsV.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmNaklV.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmOrganizations.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmPrint.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmPrintPreView.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.Properties.Resources.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmSpravOrg.resources
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+C:\Documents and Settings\Mito\Рабочий стол\389\src\bin\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\389\src\bin\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\389\src\bin\Debug\Framework.dll
+C:\Documents and Settings\Mito\Рабочий стол\389\src\bin\Debug\Interop.Excel.dll
+C:\Documents and Settings\Mito\Рабочий стол\389\src\bin\Debug\office.dll
+C:\Documents and Settings\Mito\Рабочий стол\389\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\391\src\bin\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\391\src\bin\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\391\src\bin\Debug\Framework.dll
+D:\Programs\Spisanie\branches\391\src\bin\Debug\Interop.Excel.dll
+D:\Programs\Spisanie\branches\391\src\bin\Debug\office.dll
+D:\Programs\Spisanie\branches\391\src\obj\Debug\ResolveAssemblyReference.cache
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmLoad.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.mainForm.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmPrint.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\Programs\Spisanie\branches\391\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmBuhOst.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmLoad.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.mainForm.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmNaklO.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmNaklP.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmNaklPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmNaklsO.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmNaklsP.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmNaklsPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmNaklsSp.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmNaklsV.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmNaklV.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmOrganizations.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmPrint.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmPrintPreView.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.Properties.Resources.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.frmSpravOrg.resources
+C:\Documents and Settings\Mito\Рабочий стол\391\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+C:\Documents and Settings\Mito\Рабочий стол\391\src\bin\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\391\src\bin\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\391\src\bin\Debug\Framework.dll
+C:\Documents and Settings\Mito\Рабочий стол\391\src\bin\Debug\Interop.Excel.dll
+C:\Documents and Settings\Mito\Рабочий стол\391\src\bin\Debug\office.dll
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\399\src\bin\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\399\src\bin\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\399\src\bin\Debug\Framework.dll
+D:\Programs\Spisanie\branches\399\src\bin\Debug\Interop.Excel.dll
+D:\Programs\Spisanie\branches\399\src\bin\Debug\office.dll
+D:\Programs\Spisanie\branches\399\src\obj\Debug\ResolveAssemblyReference.cache
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmLoad.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.mainForm.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmPrint.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\Programs\Spisanie\branches\399\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmBuhOst.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmLoad.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.mainForm.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmNaklO.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmNaklP.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmNaklPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmNaklsO.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmNaklsP.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmNaklsPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmNaklsSp.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmNaklsV.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmNaklV.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmOrganizations.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmPrint.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmPrintPreView.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.Properties.Resources.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmSpravOrg.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+C:\Documents and Settings\Mito\Рабочий стол\399\src\bin\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\399\src\bin\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\399\src\bin\Debug\Framework.dll
+C:\Documents and Settings\Mito\Рабочий стол\399\src\bin\Debug\Interop.Excel.dll
+C:\Documents and Settings\Mito\Рабочий стол\399\src\bin\Debug\office.dll
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmInvResults.resources
+C:\Documents and Settings\Mito\Рабочий стол\399\src\obj\Debug\Spisanie.frmZero.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\422\src\bin\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\422\src\bin\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\422\src\bin\Debug\Framework.dll
+D:\Programs\Spisanie\branches\422\src\bin\Debug\Interop.Excel.dll
+D:\Programs\Spisanie\branches\422\src\bin\Debug\office.dll
+D:\Programs\Spisanie\branches\422\src\obj\Debug\ResolveAssemblyReference.cache
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmLoad.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.mainForm.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmPrint.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.frmZero.resources
+D:\Programs\Spisanie\branches\422\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\Programs\Spisanie\branches\422\src\bin\Debug\Framework.pdb
+D:\Programs\Spisanie\branches\422\src\bin\Debug\Framework.xml
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmBuhOst.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmInvResults.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmLoad.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.mainForm.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmNaklO.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmNaklP.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmNaklPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmNaklsO.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmNaklsP.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmNaklsPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmNaklsSp.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmNaklsV.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmNaklV.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmOrganizations.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmPrint.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmPrintPreView.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.Properties.Resources.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmSpravOrg.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.frmZero.resources
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\422\src\bin\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\422\src\bin\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\422\src\obj\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\422\src\bin\Debug\Framework.dll
+C:\Documents and Settings\Mito\Рабочий стол\422\src\bin\Debug\Interop.Excel.dll
+C:\Documents and Settings\Mito\Рабочий стол\422\src\bin\Debug\office.dll
+D:\Programs\Spisanie\branches\442\src\obj\Debug\ResolveAssemblyReference.cache
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmLoad.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.mainForm.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmPrint.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.frmZero.resources
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\442\src\bin\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\442\src\bin\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\442\src\bin\Debug\Framework.dll
+D:\Programs\Spisanie\branches\442\src\bin\Debug\Interop.Excel.dll
+D:\Programs\Spisanie\branches\442\src\bin\Debug\office.dll
+D:\Programs\Spisanie\branches\442\src\obj\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\442\src\bin\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\442\src\bin\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\442\src\bin\Debug\Framework.dll
+C:\Documents and Settings\Mito\Рабочий стол\442\src\bin\Debug\Interop.Excel.dll
+C:\Documents and Settings\Mito\Рабочий стол\442\src\bin\Debug\office.dll
+C:\Documents and Settings\Mito\Рабочий стол\442\src\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmBuhOst.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmInvResults.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmLoad.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.mainForm.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmNaklO.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmNaklP.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmNaklPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmNaklsO.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmNaklsP.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmNaklsPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmNaklsSp.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmNaklsV.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmNaklV.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmOrganizations.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmPrint.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmPrintPreView.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.Properties.Resources.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmSpravOrg.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.frmZero.resources
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\442\src\obj\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\487\src\bin\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\487\src\bin\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\487\src\bin\Debug\Framework.dll
+D:\Programs\Spisanie\branches\487\src\bin\Debug\Interop.Excel.dll
+D:\Programs\Spisanie\branches\487\src\bin\Debug\office.dll
+D:\Programs\Spisanie\branches\487\src\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Programs\Spisanie\branches\487\src\obj\Debug\ResolveAssemblyReference.cache
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmLoad.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.mainForm.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmPrint.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.frmZero.resources
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\487\src\obj\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\487\src\bin\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\487\src\bin\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\487\src\bin\Debug\Framework.dll
+C:\Documents and Settings\Mito\Рабочий стол\487\src\bin\Debug\Interop.Excel.dll
+C:\Documents and Settings\Mito\Рабочий стол\487\src\bin\Debug\office.dll
+C:\Documents and Settings\Mito\Рабочий стол\487\src\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmBuhOst.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmInvResults.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmLoad.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.mainForm.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmNaklO.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmNaklP.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmNaklPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmNaklsO.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmNaklsP.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmNaklsPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmNaklsSp.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmNaklsV.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmNaklV.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmOrganizations.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmPrint.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmPrintPreView.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.Properties.Resources.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmSpravOrg.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.frmZero.resources
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\487\src\obj\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\620\src\bin\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\620\src\bin\Debug\Spisanie.pdb
+D:\Programs\Spisanie\branches\620\src\bin\Debug\Framework.dll
+D:\Programs\Spisanie\branches\620\src\bin\Debug\Interop.Excel.dll
+D:\Programs\Spisanie\branches\620\src\bin\Debug\office.dll
+D:\Programs\Spisanie\branches\620\src\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Programs\Spisanie\branches\620\src\obj\Debug\ResolveAssemblyReference.cache
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmLoad.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.mainForm.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmPrint.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.frmZero.resources
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.exe
+D:\Programs\Spisanie\branches\620\src\obj\Debug\Spisanie.pdb
+D:\spg\spisanie\src\bin\Debug\Spisanie.exe
+D:\spg\spisanie\src\bin\Debug\Spisanie.pdb
+D:\spg\spisanie\src\bin\Debug\Framework.dll
+D:\spg\spisanie\src\bin\Debug\Interop.Excel.dll
+D:\spg\spisanie\src\bin\Debug\office.dll
+D:\spg\spisanie\src\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\spg\spisanie\src\obj\Debug\ResolveAssemblyReference.cache
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmLoad.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.Login.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.mainForm.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.PeriodControl.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmPrint.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.TimeBlock.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.frmZero.resources
+D:\spg\spisanie\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\spg\spisanie\src\obj\Debug\Spisanie.exe
+D:\spg\spisanie\src\obj\Debug\Spisanie.pdb
+E:\Works\Current 08.11.2012\spis\src\bin\Debug\Spisanie.exe
+E:\Works\Current 08.11.2012\spis\src\bin\Debug\Spisanie.pdb
+E:\Works\Current 08.11.2012\spis\src\bin\Debug\Framework.dll
+E:\Works\Current 08.11.2012\spis\src\bin\Debug\Interop.Excel.dll
+E:\Works\Current 08.11.2012\spis\src\bin\Debug\office.dll
+E:\Works\Current 08.11.2012\spis\src\bin\Debug\Microsoft.Vbe.Interop.dll
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\ResolveAssemblyReference.cache
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmBuhOst.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmInvResults.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmLoad.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.Login.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.mainForm.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmNaklO.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmNaklP.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmNaklPc.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmNaklsO.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmNaklsP.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmNaklsPc.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmNaklsSp.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmNaklsV.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmNaklV.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmOrganizations.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.PeriodControl.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmPrint.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmPrintPreView.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.Properties.Resources.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmSpravOrg.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.TimeBlock.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.frmZero.resources
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.exe
+E:\Works\Current 08.11.2012\spis\src\obj\Debug\Spisanie.pdb
+D:\spg\списание\src\bin\Debug\Spisanie.exe
+D:\spg\списание\src\bin\Debug\Spisanie.pdb
+D:\spg\списание\src\bin\Debug\Framework.dll
+D:\spg\списание\src\bin\Debug\Interop.Excel.dll
+D:\spg\списание\src\bin\Debug\office.dll
+D:\spg\списание\src\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\spg\списание\src\obj\Debug\ResolveAssemblyReference.cache
+D:\spg\списание\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmLoad.resources
+D:\spg\списание\src\obj\Debug\Spisanie.Login.resources
+D:\spg\списание\src\obj\Debug\Spisanie.mainForm.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\spg\списание\src\obj\Debug\Spisanie.PeriodControl.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmPrint.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\spg\списание\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\spg\списание\src\obj\Debug\Spisanie.TimeBlock.resources
+D:\spg\списание\src\obj\Debug\Spisanie.frmZero.resources
+D:\spg\списание\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\spg\списание\src\obj\Debug\Spisanie.exe
+D:\spg\списание\src\obj\Debug\Spisanie.pdb
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\ResolveAssemblyReference.cache
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmClosePartPeriod.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmLoad.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.Login.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.mainForm.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.PeriodControl.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmPrint.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.TimeBlock.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.frmZero.resources
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\Contracts\1076 ПО Инв спис\src\bin\Debug\Spisanie.exe
+D:\Contracts\1076 ПО Инв спис\src\bin\Debug\Spisanie.pdb
+D:\Contracts\1076 ПО Инв спис\src\bin\Debug\Framework.dll
+D:\Contracts\1076 ПО Инв спис\src\bin\Debug\Interop.Excel.dll
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.exe
+D:\Contracts\1076 ПО Инв спис\src\obj\Debug\Spisanie.pdb
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\ResolveAssemblyReference.cache
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmClosePartPeriod.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmLoad.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.Login.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.mainForm.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.PeriodControl.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmPrint.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.TimeBlock.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.frmZero.resources
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\Contracts\1076 ПО Инв спис\1076\src\bin\Debug\Spisanie.exe
+D:\Contracts\1076 ПО Инв спис\1076\src\bin\Debug\Spisanie.pdb
+D:\Contracts\1076 ПО Инв спис\1076\src\bin\Debug\Framework.dll
+D:\Contracts\1076 ПО Инв спис\1076\src\bin\Debug\Interop.Excel.dll
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.exe
+D:\Contracts\1076 ПО Инв спис\1076\src\obj\Debug\Spisanie.pdb
+D:\Проекты\2014.08.19 - Spisanie\1076\src\bin\Debug\Spisanie.exe
+D:\Проекты\2014.08.19 - Spisanie\1076\src\bin\Debug\Spisanie.pdb
+D:\Проекты\2014.08.19 - Spisanie\1076\src\bin\Debug\Framework.dll
+D:\Проекты\2014.08.19 - Spisanie\1076\src\bin\Debug\Interop.Excel.dll
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\ResolveAssemblyReference.cache
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmClosePartPeriod.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmLoad.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.Login.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.mainForm.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.PeriodControl.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmPrint.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.TimeBlock.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.frmZero.resources
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.exe
+D:\Проекты\2014.08.19 - Spisanie\1076\src\obj\Debug\Spisanie.pdb
+D:\Проекты\2014.08.19 - Spisanie\src\bin\Debug\Spisanie.exe
+D:\Проекты\2014.08.19 - Spisanie\src\bin\Debug\Spisanie.pdb
+D:\Проекты\2014.08.19 - Spisanie\src\bin\Debug\Framework.dll
+D:\Проекты\2014.08.19 - Spisanie\src\bin\Debug\Interop.Excel.dll
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\ResolveAssemblyReference.cache
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmClosePartPeriod.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmLoad.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.Login.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.mainForm.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.PeriodControl.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmPrint.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.TimeBlock.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.frmZero.resources
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.exe
+D:\Проекты\2014.08.19 - Spisanie\src\obj\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\src\bin\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\src\bin\Debug\Spisanie.pdb
+C:\Documents and Settings\Mito\Рабочий стол\src\bin\Debug\Framework.dll
+C:\Documents and Settings\Mito\Рабочий стол\src\bin\Debug\Interop.Excel.dll
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmBuhOst.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmClosePartPeriod.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmInvResults.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmLoad.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.Login.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.mainForm.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmNaklO.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmNaklP.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmNaklPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmNaklsO.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmNaklsP.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmNaklsPc.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmNaklsSp.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmNaklsV.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmNaklV.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmOrganizations.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.PeriodControl.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmPrint.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmPrintPreView.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.Properties.Resources.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmSpravOrg.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.TimeBlock.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.frmZero.resources
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.exe
+C:\Documents and Settings\Mito\Рабочий стол\src\obj\Debug\Spisanie.pdb
+D:\spg\Проекты\Договор 1281\src\bin\Debug\Spisanie.exe
+D:\spg\Проекты\Договор 1281\src\bin\Debug\Spisanie.pdb
+D:\spg\Проекты\Договор 1281\src\bin\Debug\Framework.dll
+D:\spg\Проекты\Договор 1281\src\bin\Debug\Interop.Excel.dll
+D:\spg\Проекты\Договор 1281\src\obj\Debug\ResolveAssemblyReference.cache
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmClosePartPeriod.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmLoad.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.Login.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.mainForm.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.PeriodControl.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmPrint.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.TimeBlock.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.frmZero.resources
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.exe
+D:\spg\Проекты\Договор 1281\src\obj\Debug\Spisanie.pdb
+D:\spg\Проекты\договор 2325\Списание\src\bin\Debug\Spisanie.exe
+D:\spg\Проекты\договор 2325\Списание\src\bin\Debug\Spisanie.pdb
+D:\spg\Проекты\договор 2325\Списание\src\bin\Debug\Framework.dll
+D:\spg\Проекты\договор 2325\Списание\src\bin\Debug\Interop.Excel.dll
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.csprojResolveAssemblyReference.cache
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmClosePartPeriod.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmLoad.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.Login.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.mainForm.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.PeriodControl.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmPrint.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.TimeBlock.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.frmZero.resources
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.exe
+D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.pdb
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.csprojAssemblyReference.cache
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmBuhOst.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmClosePartPeriod.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmInvResults.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmLoad.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.Login.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.mainForm.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmNaklO.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmNaklP.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmNaklPc.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmNaklsO.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmNaklsP.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmNaklsPc.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmNaklsSp.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmNaklsV.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmNaklV.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmNakl_Sp.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmOrganizations.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.PeriodControl.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmPrint.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmPrintPreView.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.Properties.Resources.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmSpravOrg.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.TimeBlock.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmZero.resources
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.csproj.GenerateResource.cache
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.csproj.CoreCompileInputs.cache
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.exe
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.pdb
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\Spisanie.exe
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\Spisanie.pdb
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\CrystalDecisions.Shared.dll
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\Framework.dll
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\Interop.Excel.dll
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\office.dll
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\stdole.dll
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.csproj.CopyComplete
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\Spisanie.exe.config

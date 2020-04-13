@@ -1,0 +1,5 @@
+D:\Work_SQL\libLogging\obj\Debug\ResolveAssemblyReference.cache
+D:\Work_SQL\libLogging\bin\Debug\libLogging.dll
+D:\Work_SQL\libLogging\bin\Debug\libLogging.pdb
+D:\Work_SQL\libLogging\obj\Debug\libLogging.dll
+D:\Work_SQL\libLogging\obj\Debug\libLogging.pdb
