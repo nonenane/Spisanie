@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cbDeps = new System.Windows.Forms.ComboBox();
             this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
@@ -44,6 +44,15 @@
             this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvNakls = new System.Windows.Forms.DataGridView();
+            this.nkdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nkttn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nkSF = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nkdep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nkpost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nkUL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nksumnakl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nksumtov = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nkvnudok = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbEditor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,15 +64,6 @@
             this.wait = new System.Windows.Forms.Label();
             this.tbSumTov = new System.Windows.Forms.TextBox();
             this.tbSumNak = new System.Windows.Forms.TextBox();
-            this.nkdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nkttn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nkSF = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nkdep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nkpost = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nkUL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nksumnakl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nksumtov = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nkvnudok = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNakls)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,19 +127,19 @@
             this.dgvNakls.AllowUserToAddRows = false;
             this.dgvNakls.AllowUserToDeleteRows = false;
             this.dgvNakls.AllowUserToResizeRows = false;
-            this.dgvNakls.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvNakls.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvNakls.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvNakls.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvNakls.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvNakls.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvNakls.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNakls.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nkdate,
@@ -159,10 +159,95 @@
             this.dgvNakls.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNakls.Size = new System.Drawing.Size(757, 367);
             this.dgvNakls.TabIndex = 7;
+            this.dgvNakls.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNakls_CellContentClick);
             this.dgvNakls.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvNakls_CellMouseDoubleClick);
             this.dgvNakls.CurrentCellChanged += new System.EventHandler(this.dgvNakls_CurrentCellChanged);
             this.dgvNakls.Paint += new System.Windows.Forms.PaintEventHandler(this.dgvNakls_Paint);
-            this.dgvNakls.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNakls_CellContentClick);
+            // 
+            // nkdate
+            // 
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.Format = "d";
+            dataGridViewCellStyle11.NullValue = null;
+            this.nkdate.DefaultCellStyle = dataGridViewCellStyle11;
+            this.nkdate.FillWeight = 70F;
+            this.nkdate.HeaderText = "Дата";
+            this.nkdate.Name = "nkdate";
+            this.nkdate.ReadOnly = true;
+            // 
+            // nkttn
+            // 
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.nkttn.DefaultCellStyle = dataGridViewCellStyle12;
+            this.nkttn.FillWeight = 70F;
+            this.nkttn.HeaderText = "ТТН";
+            this.nkttn.Name = "nkttn";
+            this.nkttn.ReadOnly = true;
+            // 
+            // nkSF
+            // 
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.nkSF.DefaultCellStyle = dataGridViewCellStyle13;
+            this.nkSF.FillWeight = 80F;
+            this.nkSF.HeaderText = "№ счет фактуры";
+            this.nkSF.Name = "nkSF";
+            this.nkSF.ReadOnly = true;
+            // 
+            // nkdep
+            // 
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.nkdep.DefaultCellStyle = dataGridViewCellStyle14;
+            this.nkdep.FillWeight = 80F;
+            this.nkdep.HeaderText = "Отдел";
+            this.nkdep.Name = "nkdep";
+            this.nkdep.ReadOnly = true;
+            // 
+            // nkpost
+            // 
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.nkpost.DefaultCellStyle = dataGridViewCellStyle15;
+            this.nkpost.HeaderText = "Поставщик";
+            this.nkpost.Name = "nkpost";
+            this.nkpost.ReadOnly = true;
+            // 
+            // nkUL
+            // 
+            this.nkUL.HeaderText = "Юр. лицо";
+            this.nkUL.Name = "nkUL";
+            this.nkUL.ReadOnly = true;
+            // 
+            // nksumnakl
+            // 
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle16.Format = "N2";
+            dataGridViewCellStyle16.NullValue = null;
+            this.nksumnakl.DefaultCellStyle = dataGridViewCellStyle16;
+            this.nksumnakl.FillWeight = 90F;
+            this.nksumnakl.HeaderText = "Сумма накл.";
+            this.nksumnakl.Name = "nksumnakl";
+            this.nksumnakl.ReadOnly = true;
+            this.nksumnakl.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // nksumtov
+            // 
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle17.Format = "N2";
+            dataGridViewCellStyle17.NullValue = null;
+            this.nksumtov.DefaultCellStyle = dataGridViewCellStyle17;
+            this.nksumtov.FillWeight = 90F;
+            this.nksumtov.HeaderText = "Сумма по товару";
+            this.nksumtov.Name = "nksumtov";
+            this.nksumtov.ReadOnly = true;
+            this.nksumtov.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // nkvnudok
+            // 
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.nkvnudok.DefaultCellStyle = dataGridViewCellStyle18;
+            this.nkvnudok.FillWeight = 70F;
+            this.nkvnudok.HeaderText = "№ внут. док";
+            this.nkvnudok.Name = "nkvnudok";
+            this.nkvnudok.ReadOnly = true;
             // 
             // tbEditor
             // 
@@ -262,7 +347,7 @@
             // 
             this.tbSumTov.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.tbSumTov.BackColor = System.Drawing.Color.White;
-            this.tbSumTov.Location = new System.Drawing.Point(589, 410);
+            this.tbSumTov.Location = new System.Drawing.Point(589, 416);
             this.tbSumTov.Name = "tbSumTov";
             this.tbSumTov.ReadOnly = true;
             this.tbSumTov.Size = new System.Drawing.Size(108, 20);
@@ -273,97 +358,12 @@
             // 
             this.tbSumNak.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.tbSumNak.BackColor = System.Drawing.Color.White;
-            this.tbSumNak.Location = new System.Drawing.Point(478, 410);
+            this.tbSumNak.Location = new System.Drawing.Point(478, 416);
             this.tbSumNak.Name = "tbSumNak";
             this.tbSumNak.ReadOnly = true;
             this.tbSumNak.Size = new System.Drawing.Size(108, 20);
             this.tbSumNak.TabIndex = 19;
             this.tbSumNak.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // nkdate
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Format = "d";
-            dataGridViewCellStyle2.NullValue = null;
-            this.nkdate.DefaultCellStyle = dataGridViewCellStyle2;
-            this.nkdate.FillWeight = 70F;
-            this.nkdate.HeaderText = "Дата";
-            this.nkdate.Name = "nkdate";
-            this.nkdate.ReadOnly = true;
-            // 
-            // nkttn
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.nkttn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.nkttn.FillWeight = 70F;
-            this.nkttn.HeaderText = "ТТН";
-            this.nkttn.Name = "nkttn";
-            this.nkttn.ReadOnly = true;
-            // 
-            // nkSF
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.nkSF.DefaultCellStyle = dataGridViewCellStyle4;
-            this.nkSF.FillWeight = 80F;
-            this.nkSF.HeaderText = "№ счет фактуры";
-            this.nkSF.Name = "nkSF";
-            this.nkSF.ReadOnly = true;
-            // 
-            // nkdep
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.nkdep.DefaultCellStyle = dataGridViewCellStyle5;
-            this.nkdep.FillWeight = 80F;
-            this.nkdep.HeaderText = "Отдел";
-            this.nkdep.Name = "nkdep";
-            this.nkdep.ReadOnly = true;
-            // 
-            // nkpost
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.nkpost.DefaultCellStyle = dataGridViewCellStyle6;
-            this.nkpost.HeaderText = "Поставщик";
-            this.nkpost.Name = "nkpost";
-            this.nkpost.ReadOnly = true;
-            // 
-            // nkUL
-            // 
-            this.nkUL.HeaderText = "Юр. лицо";
-            this.nkUL.Name = "nkUL";
-            this.nkUL.ReadOnly = true;
-            // 
-            // nksumnakl
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.Format = "N2";
-            dataGridViewCellStyle7.NullValue = null;
-            this.nksumnakl.DefaultCellStyle = dataGridViewCellStyle7;
-            this.nksumnakl.FillWeight = 90F;
-            this.nksumnakl.HeaderText = "Сумма накл.";
-            this.nksumnakl.Name = "nksumnakl";
-            this.nksumnakl.ReadOnly = true;
-            this.nksumnakl.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // nksumtov
-            // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.Format = "N2";
-            dataGridViewCellStyle8.NullValue = null;
-            this.nksumtov.DefaultCellStyle = dataGridViewCellStyle8;
-            this.nksumtov.FillWeight = 90F;
-            this.nksumtov.HeaderText = "Сумма по товару";
-            this.nksumtov.Name = "nksumtov";
-            this.nksumtov.ReadOnly = true;
-            this.nksumtov.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // nkvnudok
-            // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.nkvnudok.DefaultCellStyle = dataGridViewCellStyle9;
-            this.nkvnudok.FillWeight = 70F;
-            this.nkvnudok.HeaderText = "№ внут. док";
-            this.nkvnudok.Name = "nkvnudok";
-            this.nkvnudok.ReadOnly = true;
             // 
             // frmNaklsP
             // 
@@ -389,6 +389,7 @@
             this.Controls.Add(this.dgvNakls);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmNaklsP";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Накладные прихода от поставщика";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

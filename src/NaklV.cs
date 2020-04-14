@@ -133,6 +133,9 @@ namespace Spisanie
                     CalculateSumms();
                     break;
             }
+
+            dtTovars.AcceptChanges();
+            isEditCell = false;
         }
 
         private void btSave_Click(object sender, EventArgs e)
@@ -220,9 +223,87 @@ namespace Spisanie
 
         }
 
+        private void dgvTovars_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
+        {
+            if (e.RowIndex != -1 && dtTovars != null && dtTovars.DefaultView.Count != 0)
+            {
+                Color rColor = Color.White;
+                dgvTovars.Rows[e.RowIndex].DefaultCellStyle.BackColor = rColor;
+                dgvTovars.Rows[e.RowIndex].DefaultCellStyle.SelectionBackColor = rColor;
+                dgvTovars.Rows[e.RowIndex].DefaultCellStyle.SelectionForeColor = Color.Black;
+
+                decimal minPrice, maxPrice;
+                minPrice = (decimal)dtTovars.DefaultView[e.RowIndex]["minPrice"];
+                maxPrice = (decimal)dtTovars.DefaultView[e.RowIndex]["maxPrice"];
+                decimal _rcena = (decimal)dtTovars.DefaultView[e.RowIndex]["rcena"];
+                
+
+                if (_rcena > maxPrice || _rcena < minPrice)
+                {
+                    dgvTovars.Rows[e.RowIndex].Cells[tvRcena.Index].Style.BackColor =
+                    dgvTovars.Rows[e.RowIndex].Cells[tvRcena.Index].Style.SelectionBackColor = panel1.BackColor;
+                }
+                
+            }
+        }
+
+        private void dgvTovars_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            DataGridView dgv = sender as DataGridView;
+            //Рисуем рамку для выделеной строки
+            if (dgv.Rows[e.RowIndex].Selected)
+            {
+                int width = dgv.Width;
+                Rectangle r = dgv.GetRowDisplayRectangle(e.RowIndex, false);
+                Rectangle rect = new Rectangle(r.X, r.Y, width - 1, r.Height - 1);
+
+                ControlPaint.DrawBorder(e.Graphics, rect,
+                    SystemColors.Highlight, 2, ButtonBorderStyle.Solid,
+                    SystemColors.Highlight, 2, ButtonBorderStyle.Solid,
+                    SystemColors.Highlight, 2, ButtonBorderStyle.Solid,
+                    SystemColors.Highlight, 2, ButtonBorderStyle.Solid);
+            }
+        }
+        bool isEditCell = false;
+        private void dgvTovars_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            isEditCell = true;
+        }
+
+        private void dgvTovars_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            if (e.Control is TextBox)
+            {
+                TextBox tb = (TextBox)e.Control;
+                tb.KeyPress -= new KeyPressEventHandler(tbDecimal_KeyPress);
+                tb.KeyPress += new KeyPressEventHandler(tbDecimal_KeyPress);
+            }
+        }
+
+        private void tbDecimal_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '.')
+            {
+                e.KeyChar = ',';
+            }
+
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.ToString().Contains(e.KeyChar) || (sender as TextBox).Text.ToString().Length == 0))
+            {
+                e.Handled = true;
+            }
+            else
+                if ((!Char.IsNumber(e.KeyChar) && (e.KeyChar != ',')))
+            {
+                if (e.KeyChar != '\b')
+                { e.Handled = true; }
+            }
+        }
+
         private void dgvTovars_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
         {
-            Decimal decimaltest;
+            if (!isEditCell) return;
+
+            Decimal decimaltest = 0;
             if (
                 e.ColumnIndex == 4 && 
                 (!decimal.TryParse(e.FormattedValue.ToString(), out decimaltest)
@@ -230,6 +311,25 @@ namespace Spisanie
             {
                 MessageBox.Show("Неверно указано значение поля!", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 e.Cancel = true;
+            }
+
+            if ( e.ColumnIndex == tvRcena.Index)
+            {
+                //string _ean = (string)dtTovars.DefaultView[e.RowIndex]["ean"];
+                //int _id_tovar = (int)dtTovars.DefaultView[e.RowIndex]["kodt"];
+                //DateTime _date = DateTime.Parse(tbDate.Text);
+                //if (!proc.getPriceTovarWithPrcn(_id_tovar, _date, decimaltest)) {e.Cancel = true; return;}  
+
+                decimal minPrice, maxPrice, prc;
+                minPrice = (decimal)dtTovars.DefaultView[e.RowIndex]["minPrice"];
+                maxPrice = (decimal)dtTovars.DefaultView[e.RowIndex]["maxPrice"];
+                prc = (decimal)dtTovars.DefaultView[e.RowIndex]["prnc"];
+                if (decimaltest > maxPrice || decimaltest < minPrice)
+                {
+                    MessageBox.Show(TempValues.centralText($"Введённая цена выходит за\nдиапазон цены, определяемой\nпроцентом наценки {prc.ToString("0.00")}%\n"), "Проверка цены", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    //e.Cancel = true;
+                    return;
+                }
             }
         }
 

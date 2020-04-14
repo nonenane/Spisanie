@@ -70,6 +70,8 @@
             this.wait = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cbUL = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTovars)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,9 +80,9 @@
             this.dgvTovars.AllowUserToAddRows = false;
             this.dgvTovars.AllowUserToDeleteRows = false;
             this.dgvTovars.AllowUserToResizeRows = false;
-            this.dgvTovars.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvTovars.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvTovars.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTovars.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -106,14 +108,17 @@
             this.dgvTovars.Name = "dgvTovars";
             this.dgvTovars.RowHeadersVisible = false;
             this.dgvTovars.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTovars.Size = new System.Drawing.Size(757, 347);
+            this.dgvTovars.Size = new System.Drawing.Size(757, 341);
             this.dgvTovars.TabIndex = 2;
-            this.dgvTovars.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvTovars_CellValidating);
+            this.dgvTovars.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgvTovars_CellBeginEdit);
             this.dgvTovars.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTovars_CellEndEdit);
+            this.dgvTovars.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvTovars_CellValidating);
+            this.dgvTovars.ColumnWidthChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.dgvTovars_ColumnWidthChanged);
+            this.dgvTovars.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvTovars_EditingControlShowing);
+            this.dgvTovars.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvTovars_RowPostPaint);
+            this.dgvTovars.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvTovars_RowPrePaint);
             this.dgvTovars.Paint += new System.Windows.Forms.PaintEventHandler(this.dgvTovars_Paint);
             this.dgvTovars.Resize += new System.EventHandler(this.dgvTovars_Resize);
-            this.dgvTovars.ColumnWidthChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.dgvTovars_ColumnWidthChanged);
-            this.dgvTovars.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTovars_CellContentClick);
             // 
             // tvEan
             // 
@@ -230,7 +235,6 @@
             this.tbTTN.Name = "tbTTN";
             this.tbTTN.Size = new System.Drawing.Size(95, 20);
             this.tbTTN.TabIndex = 0;
-            this.tbTTN.TextChanged += new System.EventHandler(this.tbTTN_TextChanged);
             // 
             // tbVnudok
             // 
@@ -433,10 +437,31 @@
             this.cbUL.Size = new System.Drawing.Size(72, 21);
             this.cbUL.TabIndex = 36;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(153)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(11, 407);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(19, 19);
+            this.panel1.TabIndex = 38;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(36, 410);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(107, 13);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "Некорректная цена";
+            // 
             // frmNaklP
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(779, 475);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cbUL);
             this.Controls.Add(this.wait);
@@ -448,6 +473,7 @@
             this.Controls.Add(this.tbSumR);
             this.Controls.Add(this.tbDateEdit);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbEditor);
             this.Controls.Add(this.btGetPost);
@@ -464,6 +490,7 @@
             this.Controls.Add(this.btClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmNaklP";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Накладная на приход от поставщика";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -509,5 +536,7 @@
         private System.Windows.Forms.Label wait;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbUL;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label10;
     }
 }

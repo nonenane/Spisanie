@@ -219,7 +219,8 @@ namespace Spisanie
                                                 , int.Parse(dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id_post"].ToString())
                                                 , dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["post"].ToString().Trim()
                                                 , int.Parse(dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id_dep"].ToString()),
-                                                Convert.ToString(dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["credit"].ToString()));
+                                                Convert.ToString(dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["credit"].ToString()))
+                { Text = Text + " " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["dep"].ToString() };
 
                 editForm.ShowDialog();
                 dgvNakls_init();

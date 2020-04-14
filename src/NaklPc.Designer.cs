@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvTovars = new System.Windows.Forms.DataGridView();
             this.tvEan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +62,8 @@
             this.btClose = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.cbUL = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTovars)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,19 +72,19 @@
             this.dgvTovars.AllowUserToAddRows = false;
             this.dgvTovars.AllowUserToDeleteRows = false;
             this.dgvTovars.AllowUserToResizeRows = false;
-            this.dgvTovars.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvTovars.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvTovars.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTovars.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTovars.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTovars.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTovars.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTovars.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tvEan,
@@ -97,19 +99,23 @@
             this.dgvTovars.Name = "dgvTovars";
             this.dgvTovars.RowHeadersVisible = false;
             this.dgvTovars.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTovars.Size = new System.Drawing.Size(757, 369);
+            this.dgvTovars.Size = new System.Drawing.Size(757, 363);
             this.dgvTovars.TabIndex = 14;
-            this.dgvTovars.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvTovars_CellValidating);
+            this.dgvTovars.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgvTovars_CellBeginEdit);
+            this.dgvTovars.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTovars_CellContentClick);
             this.dgvTovars.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTovars_CellEndEdit);
+            this.dgvTovars.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvTovars_CellValidating);
+            this.dgvTovars.ColumnWidthChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.dgvTovars_ColumnWidthChanged);
+            this.dgvTovars.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvTovars_EditingControlShowing);
+            this.dgvTovars.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvTovars_RowPostPaint);
+            this.dgvTovars.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvTovars_RowPrePaint);
             this.dgvTovars.Paint += new System.Windows.Forms.PaintEventHandler(this.dgvTovars_Paint);
             this.dgvTovars.Resize += new System.EventHandler(this.dgvTovars_Resize);
-            this.dgvTovars.ColumnWidthChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.dgvTovars_ColumnWidthChanged);
-            this.dgvTovars.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTovars_CellContentClick);
             // 
             // tvEan
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.tvEan.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.tvEan.DefaultCellStyle = dataGridViewCellStyle2;
             this.tvEan.FillWeight = 90F;
             this.tvEan.HeaderText = "EAN";
             this.tvEan.Name = "tvEan";
@@ -117,8 +123,8 @@
             // 
             // tvName
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.tvName.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.tvName.DefaultCellStyle = dataGridViewCellStyle3;
             this.tvName.FillWeight = 185F;
             this.tvName.HeaderText = "Наименование";
             this.tvName.Name = "tvName";
@@ -126,10 +132,10 @@
             // 
             // tvNetto
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle12.Format = "N3";
-            dataGridViewCellStyle12.NullValue = null;
-            this.tvNetto.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "N3";
+            dataGridViewCellStyle4.NullValue = null;
+            this.tvNetto.DefaultCellStyle = dataGridViewCellStyle4;
             this.tvNetto.FillWeight = 80F;
             this.tvNetto.HeaderText = "Количество";
             this.tvNetto.Name = "tvNetto";
@@ -137,28 +143,28 @@
             // 
             // tvBcena
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle13.Format = "N2";
-            dataGridViewCellStyle13.NullValue = null;
-            this.tvBcena.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Format = "N2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.tvBcena.DefaultCellStyle = dataGridViewCellStyle5;
             this.tvBcena.FillWeight = 75F;
             this.tvBcena.HeaderText = "Цена старая";
             this.tvBcena.Name = "tvBcena";
             // 
             // tvRcena
             // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle14.Format = "N2";
-            dataGridViewCellStyle14.NullValue = null;
-            this.tvRcena.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.Format = "N2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.tvRcena.DefaultCellStyle = dataGridViewCellStyle6;
             this.tvRcena.FillWeight = 80F;
             this.tvRcena.HeaderText = "Цена розн.";
             this.tvRcena.Name = "tvRcena";
             // 
             // tvNds
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.tvNds.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.tvNds.DefaultCellStyle = dataGridViewCellStyle7;
             this.tvNds.FillWeight = 50F;
             this.tvNds.HeaderText = "НДС";
             this.tvNds.Name = "tvNds";
@@ -167,10 +173,10 @@
             // 
             // tvSumB
             // 
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle16.Format = "N2";
-            dataGridViewCellStyle16.NullValue = null;
-            this.tvSumB.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.Format = "N2";
+            dataGridViewCellStyle8.NullValue = null;
+            this.tvSumB.DefaultCellStyle = dataGridViewCellStyle8;
             this.tvSumB.FillWeight = 95F;
             this.tvSumB.HeaderText = "Переоценено сумма";
             this.tvSumB.Name = "tvSumB";
@@ -347,10 +353,32 @@
             this.cbUL.Size = new System.Drawing.Size(72, 21);
             this.cbUL.TabIndex = 36;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(153)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(10, 407);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(19, 19);
+            this.panel1.TabIndex = 40;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(35, 410);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(107, 13);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "Некорректная цена";
+            // 
             // frmNaklPc
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(779, 475);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cbUL);
             this.Controls.Add(this.wait);
@@ -410,5 +438,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tvSumB;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbUL;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label10;
     }
 }

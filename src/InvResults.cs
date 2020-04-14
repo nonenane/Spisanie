@@ -46,6 +46,20 @@ namespace Spisanie
         private void btPrint_Click(object sender, EventArgs e)
         {
             this.Enabled = false;
+            DataTable dtResult = proc.getTovarOutPrcnPrice(dtpInvDate.Value.Date);
+
+            if (dtResult == null) {
+                MessageBox.Show("Не удалось получить данные!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Enabled = true;
+                return;
+            }
+
+            if (dtResult.Rows.Count > 0)
+            {
+                new percentData.frmFindTovar() { Text = $"Проверка превышения процента наценки за {dtpInvDate.Value.ToShortDateString()}", dtResult = dtResult,date = dtpInvDate.Value }.ShowDialog();
+            }
+
+
             DataTable dt = proc.GetInvRezults(dtpInvDate.Value.Date);
             if (dt == null)
             {

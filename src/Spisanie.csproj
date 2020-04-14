@@ -42,6 +42,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -64,9 +65,9 @@
     <Reference Include="CrystalDecisions.Windows.Forms">
       <HintPath>..\..\..\DLL\CrystalDecisions.Windows.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="Framework, Version=1.0.4.2, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Framework, Version=1.0.4.10, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLL\Framework.dll</HintPath>
+      <HintPath>..\..\..\DLL\Framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -227,6 +228,12 @@
     <Compile Include="Organizations.Designer.cs">
       <DependentUpon>Organizations.cs</DependentUpon>
     </Compile>
+    <Compile Include="percentData\frmFindTovar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="percentData\frmFindTovar.Designer.cs">
+      <DependentUpon>frmFindTovar.cs</DependentUpon>
+    </Compile>
     <Compile Include="PeriodControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -326,6 +333,9 @@
     <EmbeddedResource Include="Organizations.resx">
       <DependentUpon>Organizations.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="percentData\frmFindTovar.resx">
+      <DependentUpon>frmFindTovar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PeriodControl.resx">
       <DependentUpon>PeriodControl.cs</DependentUpon>

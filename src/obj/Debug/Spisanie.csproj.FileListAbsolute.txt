@@ -833,7 +833,6 @@ D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisani
 D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.csproj.GenerateResource.Cache
 D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.exe
 D:\spg\Проекты\договор 2325\Списание\src\obj\Debug\Spisanie.pdb
-D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.csprojAssemblyReference.cache
 D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmBuhOst.resources
 D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmClosePartPeriod.resources
 D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.frmInvResults.resources
@@ -871,7 +870,8 @@ D:\Работа\договор 2670\Spisanie\src\bin\Debug\CrystalDecisions.Wind
 D:\Работа\договор 2670\Spisanie\src\bin\Debug\Framework.dll
 D:\Работа\договор 2670\Spisanie\src\bin\Debug\Interop.Excel.dll
 D:\Работа\договор 2670\Spisanie\src\bin\Debug\Microsoft.Vbe.Interop.dll
-D:\Работа\договор 2670\Spisanie\src\bin\Debug\office.dll
-D:\Работа\договор 2670\Spisanie\src\bin\Debug\stdole.dll
 D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.csproj.CopyComplete
 D:\Работа\договор 2670\Spisanie\src\bin\Debug\Spisanie.exe.config
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.csprojAssemblyReference.cache
+D:\Работа\договор 2670\Spisanie\src\obj\Debug\Spisanie.percentData.frmFindTovar.resources
+D:\Работа\договор 2670\Spisanie\src\bin\Debug\EPPlus.dll
