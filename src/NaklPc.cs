@@ -171,49 +171,58 @@ namespace Spisanie
             }
 
             Logging.StartFirstLevel(27);
-
             Logging.Comment("Начало редактирование акта переоценки id= " + id.ToString().Trim() + " из j_allprihod");
-                      
+            Logging.Comment("Заголовок накладной");
+            Logging.VariableChange("ТТН в накладной прихода", tbTTN.Text.Trim(), oldttn.Trim());
+            Logging.VariableChange("Код ЮЛ", cbUL.SelectedValue.ToString(), oldUl_int.ToString());
+            Logging.VariableChange("Наименование ЮЛ", cbUL.Text.ToString(), oldUl_string.ToString());
+
+            bool isEditTovar = false;
+
             foreach (DataRow dr in dtTovars.Rows)
             {
                 if (dr["rcena"].ToString() != dr["oldrcena"].ToString()
                     || dr["bcena"].ToString() != dr["oldbcena"].ToString()
                     || dr["nds"].ToString() != dr["oldnds"].ToString())
                 {
+                    if(!isEditTovar)
+                    {
+                        Logging.Comment("Произведено редактирование товара");
+                        isEditTovar = true;
+                    }
+
+                    Logging.Comment($"EAN: {dr["ean"].ToString()}");
+                    Logging.Comment($"Товар ID:{dr["kodt"].ToString()}; Наименование:{dr["name"].ToString()}");
+
+                    Logging.VariableChange($"НДС ID", dr["nds"].ToString(), dr["oldnds"].ToString());
+                    Logging.VariableChange("Старая цена", dr["bcena"].ToString(), dr["oldbcena"].ToString());
+                    Logging.VariableChange("Цены розничная ", dr["rcena"].ToString(), dr["oldrcena"].ToString());
+
                     Logging.Comment("Изменение цен в акте переоценки");
                     proc.ChangeAdvige(int.Parse(dr["id"].ToString()), null, decimal.Parse(dr["rcena"].ToString()), decimal.Parse(dr["bcena"].ToString()), int.Parse(dr["nds"].ToString()), 5);
                     if (TempValues.Error)
                     {
+                        Logging.Comment("Ошибка редактирование акта переоценки id= " + id.ToString().Trim() + " из j_allprihod");
+                        Logging.StopFirstLevel();
                         return;
-                    }
-                    //Log
-                    if (dr["rcena"].ToString() != dr["oldrcena"].ToString())
-                    {
-                        Logging.Comment("Изменение цены продажи в акте переоценки");
-                        Logging.VariableChange("rcena", dr["rcena"].ToString(), dr["oldrcena"].ToString());
-                    }
-                    if (dr["bcena"].ToString() != dr["oldbcena"].ToString())
-                    {
-                        Logging.Comment("Изменение старой цены в акте переоценки");
-                        Logging.VariableChange("bcena", dr["bcena"].ToString(), dr["oldbcena"].ToString());
-                    }
+                    }                
                 }
-                proc.editNtypeOrgTovar(int.Parse(dr["kodt"].ToString()), int.Parse(cbUL.SelectedValue.ToString()), resultValidate); 
+                //proc.editNtypeOrgTovar(int.Parse(dr["kodt"].ToString()), int.Parse(cbUL.SelectedValue.ToString()), resultValidate); 
             }
             DataTable dt = proc.GetCloseDate();
             proc.SetRests(DateTime.Parse(tbDate.Text), DateTime.Parse(dt.Rows[0]["dinv"].ToString()), id_dep);
             Logging.Comment("Конец редактирование акта переоценки id= " + id.ToString().Trim() + " из j_allprihod");
             Logging.StopFirstLevel();
 
-            if (oldttn.Trim() != tbTTN.Text.Trim())
-            {
-                Logging.StartFirstLevel(23);
-                Logging.Comment("Начало редактирование акта переоценки id= " + id.ToString().Trim() + " из j_allprihod");
-                Logging.Comment("Изменение ttn акта переоценки");
-                Logging.VariableChange("ttn", tbTTN.Text.Trim(), oldttn.Trim());
-                Logging.Comment("Конец редактирование акта переоценки id= " + id.ToString().Trim() + " из j_allprihod");
-                Logging.StopFirstLevel();
-            }
+            //if (oldttn.Trim() != tbTTN.Text.Trim())
+            //{
+            //    Logging.StartFirstLevel(23);
+            //    Logging.Comment("Начало редактирование акта переоценки id= " + id.ToString().Trim() + " из j_allprihod");
+            //    Logging.Comment("Изменение ttn акта переоценки");
+            //    Logging.VariableChange("ttn", tbTTN.Text.Trim(), oldttn.Trim());
+            //    Logging.Comment("Конец редактирование акта переоценки id= " + id.ToString().Trim() + " из j_allprihod");
+            //    Logging.StopFirstLevel();
+            //}
             #endregion
             
             wait.Visible = false;
@@ -349,6 +358,8 @@ namespace Spisanie
             ResizeSumElements();
         }
 
+        private int oldUl_int;
+        private string oldUl_string;
         private void initUL()
         {
             try
@@ -363,9 +374,14 @@ namespace Spisanie
             cbUL.DisplayMember = "Abbriviation";
             cbUL.ValueMember = "nTypeOrg";
             if (id_ul != 0)
+            {
                 cbUL.SelectedValue = id_ul;
+                oldUl_string = cbUL.Text;
+            }
             else
                 cbUL.SelectedIndex = -1;
+
+            oldUl_int = id_ul;
         }
     }
 }

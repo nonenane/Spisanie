@@ -170,21 +170,28 @@ namespace Spisanie
             else
             {
                 Logging.StartFirstLevel(32);
-                Logging.Comment("Начало удаления акта переоценки id= "+
-                                dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString()+
-                                ", ttn = " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() + " из j_allprihod");
+                //Logging.Comment("Начало удаления акта переоценки id= "+
+                //                dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString()+
+                //                ", ttn = " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() + " из j_allprihod");
+                Logging.Comment("Начало удаления накладной id= " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString());
+                Logging.Comment($"Отдел накладной ID:{dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id_dep"].ToString()}; Наименование:{dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["dep"].ToString()}");
+                Logging.Comment($"Дата накладной: {((DateTime)dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["dprihod"]).ToShortDateString()}");
+                Logging.Comment($"ТТН: {dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString()}");
+                Logging.Comment($"№ внут.док.: {dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["vnudok"].ToString()}");
+                Logging.Comment($"ЮЛ: {dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["UL"].ToString()}");                
 
                 proc.DeleteNakls(int.Parse(dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id_dep"].ToString()), DateTime.Parse(dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["dprihod"].ToString()));
                 if (TempValues.Error)
                 {
+                    Logging.StopFirstLevel();
                     TempValues.Error = false;
                     return;
                 }
                 // Cfg.LogWrite("Пользователь " + UserInfo.UserName.Trim() + " удалил акт переоценки " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() + ".");
 
-                Logging.Comment("Акта переоценки id= " +
-                                dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString() +
-                                ", ttn = " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() + " из j_allprihod удален");
+                //Logging.Comment("Акта переоценки id= " +
+                //                dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString() +
+                //                ", ttn = " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() + " из j_allprihod удален");
                 Logging.StopFirstLevel();
 
                 dtNakls = proc.ChangeCloseDate(int.Parse(dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id_dep"].ToString()));
@@ -233,6 +240,11 @@ namespace Spisanie
 
         private void btPrint_Click(object sender, EventArgs e)
         {
+            Logging.StartFirstLevel(79);
+            Logging.Comment($"Наименование формы: {this.Text}");
+            Logging.Comment($"Отдел ID:{cbDeps.SelectedValue}; Наименование:{cbDeps.Text}");
+            Logging.Comment($"Дата с {dtpStartDate.Value.ToShortDateString()} по {dtpEndDate.Value.ToShortDateString()}");
+            Logging.StopFirstLevel();
             frmPrint printForm = new frmPrint(3, int.Parse(dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString()));
             printForm.ShowDialog();
         }

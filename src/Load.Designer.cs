@@ -35,7 +35,6 @@
             this.btClose = new System.Windows.Forms.Button();
             this.btSave = new System.Windows.Forms.Button();
             this.gbIn = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.rbVozvr = new System.Windows.Forms.RadioButton();
             this.rbPrih = new System.Windows.Forms.RadioButton();
             this.gbOut = new System.Windows.Forms.GroupBox();
@@ -104,7 +103,6 @@
             // 
             // gbIn
             // 
-            this.gbIn.Controls.Add(this.label3);
             this.gbIn.Controls.Add(this.rbVozvr);
             this.gbIn.Controls.Add(this.rbPrih);
             this.gbIn.Location = new System.Drawing.Point(201, 7);
@@ -114,22 +112,13 @@
             this.gbIn.TabStop = false;
             this.gbIn.Text = "Для прихода";
             // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(26, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 35);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "\"Возврат от покупателя\"";
-            // 
             // rbVozvr
             // 
-            this.rbVozvr.AutoSize = true;
-            this.rbVozvr.Location = new System.Drawing.Point(6, 50);
+            this.rbVozvr.Location = new System.Drawing.Point(6, 37);
             this.rbVozvr.Name = "rbVozvr";
-            this.rbVozvr.Size = new System.Drawing.Size(14, 13);
+            this.rbVozvr.Size = new System.Drawing.Size(105, 35);
             this.rbVozvr.TabIndex = 1;
+            this.rbVozvr.Text = "\"Возврат от покупателя\"";
             this.rbVozvr.UseVisualStyleBackColor = true;
             // 
             // rbPrih
@@ -233,7 +222,6 @@
         private System.Windows.Forms.GroupBox gbIn;
         private System.Windows.Forms.RadioButton rbVozvr;
         private System.Windows.Forms.RadioButton rbPrih;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox gbOut;
         private System.Windows.Forms.RadioButton rbSpis;
         private System.Windows.Forms.RadioButton rbOtgruz;

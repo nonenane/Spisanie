@@ -98,6 +98,13 @@ namespace Spisanie
         {
             if (dgvSums.RowCount > 0)
             {
+                Logging.StartFirstLevel(79);
+                Logging.Comment($"Произведена выгрузка отчета с формы 'Бухгалтерские остатки' в Excel");
+                Logging.Comment($"Дата Остаток на утро {dtpStartDate.Value.ToShortDateString()}");
+                Logging.Comment($"Отдел ID:{cbDeps.SelectedValue}; Наименование:{cbDeps.Text}");
+                Logging.Comment($"Количество выгруженных записей: {dgvSums.RowCount}");
+                Logging.StopFirstLevel();
+
                 if (HandmadeReport.OOAvailable || HandmadeReport.ExcelAvailable)
                 {
                     try

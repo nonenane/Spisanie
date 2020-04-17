@@ -262,7 +262,6 @@ namespace Spisanie
                 Logging.StopFirstLevel();
             }
             #endregion
-
              
             #region Формирование отгрузок
             dtOtgruz = editTable(dtOtgruz).Copy();
@@ -789,6 +788,7 @@ namespace Spisanie
                 }
             }
             #endregion
+   
             #region Формирование накладных
             dtCens = proc.GetCen();
             if (dtCens == null)
@@ -845,10 +845,18 @@ namespace Spisanie
             dtPrihZ.Rows.Clear();
             dtPrihZ.Dispose();
             #endregion
+          
             MessageBox.Show("Данные загружены!", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
             DataTable dtZero = proc.GetZeroDocs(dtpDate.Value.Date, int.Parse(cbDeps.SelectedValue.ToString()));
             if (dtZero.Rows.Count > 0)
             {
+                Logging.StartFirstLevel(1525);
+                Logging.Comment("Параметры загрузки");
+                Logging.Comment($"Дата {dtpDate.Value.ToShortDateString()}");
+                Logging.Comment($"Отдел ID:{cbDeps.SelectedValue}; Наименование:{cbDeps.Text}");
+                Logging.Comment($"Блок \"Для прихода\":{(rbPrih.Checked ? rbPrih.Text : rbVozvr.Text)}");
+                Logging.Comment($"Блок \"Для расхода\":{(rbOtgruz.Checked ? rbOtgruz.Text : rbSpis.Text)}");
+                
                 frmZero zero = new frmZero(dtZero);
                 zero.ShowDialog();
             }

@@ -10,7 +10,7 @@ GO
 -- Create date: <14.04.2020>
 -- Description:	<Получение товаров которые не укладываются в условия по проценту>
 -- =============================================
-CREATE PROCEDURE [spisanie].[getTovarOutPrcnPrice]	
+ALTER PROCEDURE [spisanie].[getTovarOutPrcnPrice]	
 	@date date
 AS
 BEGIN
@@ -164,7 +164,9 @@ select
 	p.realRcena,
 	p.ttn,
 	o.name as nameOperand,
-	@prnc as prnc
+	@prnc as prnc,
+	p.id_tovar,
+	p.id_otdel
 from 
 	@table p
 		left join dbo.departments d on d.id = p.id_otdel

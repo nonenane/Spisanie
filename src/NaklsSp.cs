@@ -166,16 +166,25 @@ namespace Spisanie
             {
 
                 Logging.StartFirstLevel(33);
-                Logging.Comment("Начало удаления акта списания id=" + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString()+", ttn= " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() + " из j_allprihod");
+                //Logging.Comment("Начало удаления акта списания id=" + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString()+", ttn= " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() + " из j_allprihod");
+                Logging.Comment("Начало удаления накладной id= " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString());
+                Logging.Comment($"Отдел накладной ID:{dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id_dep"].ToString()}; Наименование:{dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["dep"].ToString()}");
+                Logging.Comment($"Дата накладной: {((DateTime)dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["dprihod"]).ToShortDateString()}");
+                Logging.Comment($"ТТН: {dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString()}");
+                Logging.Comment($"№ внут.док.: {dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["vnudok"].ToString()}");
+                Logging.Comment($"ЮЛ: {dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["UL"].ToString()}");
+                //              
+                Logging.Comment($"Тип накладной ID:{dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id_operand"].ToString()}; Наименование:{dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["nameOperand"].ToString()}");
 
                 proc.DeleteNakls(int.Parse(cbDeps.SelectedValue.ToString()), DateTime.Parse(dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["dprihod"].ToString()));
                 if (TempValues.Error)
                 {
+                    Logging.StopFirstLevel();
                     TempValues.Error = false;
                     return;
                 }
                
-                Logging.Comment("Акт списания id=" + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString() + ", ttn= " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() + " из j_allprihod удален");
+                //Logging.Comment("Акт списания id=" + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString() + ", ttn= " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() + " из j_allprihod удален");
 
                 Logging.StopFirstLevel();
 

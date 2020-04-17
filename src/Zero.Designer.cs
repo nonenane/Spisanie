@@ -35,6 +35,7 @@
             this.tbRcena = new System.Windows.Forms.TextBox();
             this.tbNds = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btPrint = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -103,10 +104,22 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "с отсутствием у товаров ставки НДС";
             // 
+            // btPrint
+            // 
+            this.btPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btPrint.Image = global::Spisanie.Properties.Resources.WZPRINT;
+            this.btPrint.Location = new System.Drawing.Point(663, 210);
+            this.btPrint.Name = "btPrint";
+            this.btPrint.Size = new System.Drawing.Size(30, 30);
+            this.btPrint.TabIndex = 16;
+            this.btPrint.UseVisualStyleBackColor = true;
+            this.btPrint.Click += new System.EventHandler(this.btPrint_Click);
+            // 
             // frmZero
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(707, 201);
+            this.ClientSize = new System.Drawing.Size(707, 252);
+            this.Controls.Add(this.btPrint);
             this.Controls.Add(this.tbNds);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbRcena);
@@ -135,5 +148,6 @@
         private System.Windows.Forms.TextBox tbRcena;
         private System.Windows.Forms.TextBox tbNds;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btPrint;
     }
 }

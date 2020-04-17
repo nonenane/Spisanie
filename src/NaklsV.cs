@@ -153,19 +153,26 @@ namespace Spisanie
                 return;
             }
             Logging.StartFirstLevel(34);
-            Logging.Comment("Начало удаления накладной id= "+ dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString()+
-                                                               dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() +
-                                                               " возврата от покупателя из j_allprihod");
-
+            //Logging.Comment("Начало удаления накладной id= "+ dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString()+
+            //                                                   dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() +
+            //                                                   " возврата от покупателя из j_allprihod");
+            Logging.Comment("Начало удаления накладной id= " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString());
+            Logging.Comment($"Отдел накладной ID:{dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id_dep"].ToString()}; Наименование:{dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["dep"].ToString()}");
+            Logging.Comment($"Дата накладной: {((DateTime)dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["dprihod"]).ToShortDateString()}");
+            Logging.Comment($"ТТН: {dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString()}");
+            Logging.Comment($"№ внут.док.: {dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["vnudok"].ToString()}");
+            Logging.Comment($"ЮЛ: {dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["UL"].ToString()}");
+        
             proc.DeleteNakls(int.Parse(cbDeps.SelectedValue.ToString()), DateTime.Parse(dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["dprihod"].ToString()));
             if (TempValues.Error)
             {
+                Logging.StopFirstLevel();
                 TempValues.Error = false;
                 return;
             }
-            Logging.Comment("Накладная id= " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString() +
-                                                         dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() +
-                                                         " возврата от покупателя из j_allprihod удалена");
+            //Logging.Comment("Накладная id= " + dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["id"].ToString() +
+            //                                             dtNakls.DefaultView[dgvNakls.CurrentRow.Index]["ttn"].ToString().Trim() +
+            //                                             " возврата от покупателя из j_allprihod удалена");
             Logging.StopFirstLevel();
 
             dtNakls = proc.ChangeCloseDate(int.Parse(cbDeps.SelectedValue.ToString()));

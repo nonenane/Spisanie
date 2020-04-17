@@ -18,7 +18,7 @@ namespace Spisanie
         Procedures proc = new Procedures(ConnectionSettings.GetServer(), ConnectionSettings.GetDatabase(), ConnectionSettings.GetUsername(), ConnectionSettings.GetPassword(), ConnectionSettings.ProgramName);
 
         private int id, id_post, oldid_post, id_dep, id_ul;
-        private string oldttn, oldSF;
+        private string oldttn, oldSF, oldPost;
         private DataTable dtTovars;
         private DataTable dtNewTTN = new DataTable();
         private DataTable dtOldTTN = new DataTable();
@@ -42,6 +42,7 @@ namespace Spisanie
             tbDateEdit.Text = inDkor.ToString();
             oldttn = inTtn;
             oldSF = inSF;
+            oldPost = inPost;
         }
 
         private void frmNakl_Load(object sender, EventArgs e)
@@ -216,62 +217,75 @@ namespace Spisanie
 
             Logging.StartFirstLevel(25);
             Logging.Comment("Начало редактирования накладной прихода id= " + id.ToString().Trim() + " из j_allprihod");
-       
+            Logging.Comment("Заголовок накладной");
+            Logging.VariableChange("ТТН в накладной прихода", tbTTN.Text.Trim(), oldttn.Trim());
+            Logging.VariableChange("№ счет-фактуры", tbSF.Text.Trim(), oldSF.Trim());            
+            Logging.VariableChange("Код поставщика", id_post.ToString(), oldid_post.ToString());
+            Logging.VariableChange("Наименование поставщика", tbPost.ToString(), oldPost.ToString());
+            Logging.VariableChange("Код ЮЛ", cbUL.SelectedValue.ToString(), oldUl_int.ToString());
+            Logging.VariableChange("Наименование ЮЛ", cbUL.Text.ToString(), oldUl_string.ToString());
+
+
+            bool isEditTovar = false;
             foreach (DataRow dr in dtTovars.Rows)
             {
                 if (dr["cena"].ToString() != dr["oldcena"].ToString()
                     || dr["rcena"].ToString() != dr["oldrcena"].ToString()
-                    || dr["nds"].ToString() != dr["oldnds"].ToString())              
+                    || dr["nds"].ToString() != dr["oldnds"].ToString())
                 {
+                    if (!isEditTovar)
+                    {
+                        Logging.Comment("Произведено редактирование товара");
+                        isEditTovar = true;
+                    }
+                    Logging.Comment($"EAN: {dr["ean"].ToString()}");
+                    Logging.Comment($"Товар ID:{dr["kodt"].ToString()}; Наименование:{dr["name"].ToString()}");
+                    
+                    Logging.VariableChange($"НДС ID",dr["nds"].ToString(),dr["oldnds"].ToString());                    
+                    Logging.VariableChange("Цены закупки", dr["cena"].ToString(), dr["oldcena"].ToString());
+                    Logging.VariableChange("Цены продажи ", dr["rcena"].ToString(), dr["oldrcena"].ToString());
+
                     proc.ChangeAdvige(int.Parse(dr["id"].ToString()), decimal.Parse(dr["cena"].ToString()), decimal.Parse(dr["rcena"].ToString()), null, int.Parse(dr["nds"].ToString()), 1);
                     if (TempValues.Error)
                     {
+                        Logging.Comment("Ошибка редактирования накладной прихода id= " + id.ToString().Trim() + " из j_allprihod");
+                        Logging.StopFirstLevel();
                         return;
-                    }
-                    if (dr["cena"].ToString() != dr["oldcena"].ToString())
-                    {
-                        Logging.Comment("Изменение цены закупки в накладной прихода");
-                        Logging.VariableChange("cena", dr["cena"].ToString(), dr["oldcena"].ToString());
-                    }
-                    if (dr["rcena"].ToString() != dr["oldrcena"].ToString())
-                    {
-                        Logging.Comment("Изменение цены продажи в накладной прихода");
-                    Logging.VariableChange("rcena", dr["rcena"].ToString(), dr["oldrcena"].ToString());
-                    }
+                    }            
                 }
-                proc.editNtypeOrgTovar(int.Parse(dr["kodt"].ToString()), int.Parse(cbUL.SelectedValue.ToString()), resultValidate);              
+                //proc.editNtypeOrgTovar(int.Parse(dr["kodt"].ToString()), int.Parse(cbUL.SelectedValue.ToString()), resultValidate);              
             }
             DataTable dt = proc.GetCloseDate();
             proc.SetRests(DateTime.Parse(tbDate.Text), DateTime.Parse(dt.Rows[0]["dinv"].ToString()), id_dep);
 
-            dtNewTTN.Merge(dtTovars);
-            int[] drr;
-            drr = new int[] { 5};
+            //dtNewTTN.Merge(dtTovars);
+            //int[] drr;
+            //drr = new int[] { 5};
             Logging.Comment("Конец редактирования накладной прихода id= " + id.ToString().Trim() + " из j_allprihod");
             Logging.StopFirstLevel();
 
-            if (oldid_post != id_post || oldttn.Trim() != tbTTN.Text.Trim() || tbSF.Text.Trim() != oldSF.Trim())
-            {
-                Logging.StartFirstLevel(20);
-                Logging.Comment("Начало редактирования накладной прихода id= " + id.ToString().Trim() + " из j_allprihod");
-                if (oldid_post != id_post)
-                {
-                    Logging.Comment("Изменение кода поставщика в накладной прихода");
-                    Logging.VariableChange("id_post", id_post.ToString(), oldid_post.ToString());
-                }
-                if (oldttn.Trim() != tbTTN.Text.Trim())
-                {
-                    Logging.Comment("Изменение ttn в накладной прихода");
-                    Logging.VariableChange("ttn", tbTTN.Text.Trim(), oldttn.Trim());
-                }
-                if (oldSF.Trim() != tbSF.Text.Trim())
-                {
-                    Logging.Comment("Изменение номера счет-фактуры в накладной прихода");
-                    Logging.VariableChange("№ счет-фактуры", tbSF.Text.Trim(), oldSF.Trim());
-                }
-                Logging.Comment("Конец редактирования накладной прихода id= " + id.ToString().Trim() + " из j_allprihod");
-                Logging.StopFirstLevel();
-            }          
+            //if (oldid_post != id_post || oldttn.Trim() != tbTTN.Text.Trim() || tbSF.Text.Trim() != oldSF.Trim())
+            //{
+            //    Logging.StartFirstLevel(20);
+            //    Logging.Comment("Начало редактирования накладной прихода id= " + id.ToString().Trim() + " из j_allprihod");
+            //    if (oldid_post != id_post)
+            //    {
+            //        Logging.Comment("Изменение кода поставщика в накладной прихода");
+            //        Logging.VariableChange("id_post", id_post.ToString(), oldid_post.ToString());
+            //    }
+            //    if (oldttn.Trim() != tbTTN.Text.Trim())
+            //    {
+            //        Logging.Comment("Изменение ttn в накладной прихода");
+            //        Logging.VariableChange("ttn", tbTTN.Text.Trim(), oldttn.Trim());
+            //    }
+            //    if (oldSF.Trim() != tbSF.Text.Trim())
+            //    {
+            //        Logging.Comment("Изменение номера счет-фактуры в накладной прихода");
+            //        Logging.VariableChange("№ счет-фактуры", tbSF.Text.Trim(), oldSF.Trim());
+            //    }
+            //    Logging.Comment("Конец редактирования накладной прихода id= " + id.ToString().Trim() + " из j_allprihod");
+            //    Logging.StopFirstLevel();
+            //}          
             #endregion
             
             wait.Visible = false;
@@ -423,6 +437,8 @@ namespace Spisanie
             ResizeSumElements();
         }
 
+        private int oldUl_int;
+        private string oldUl_string;
         private void initUL()
         {
             try
@@ -437,9 +453,15 @@ namespace Spisanie
             cbUL.DisplayMember = "Abbriviation";
             cbUL.ValueMember = "nTypeOrg";
             if (id_ul != 0)
+            {
                 cbUL.SelectedValue = id_ul;
+                oldUl_string = cbUL.Text;
+            }
             else
                 cbUL.SelectedIndex = -1;
+
+            oldUl_int = id_ul;
+
         }
     }
 }

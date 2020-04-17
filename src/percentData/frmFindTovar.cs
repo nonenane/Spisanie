@@ -25,12 +25,31 @@ namespace Spisanie.percentData
         {
             tbPrcn.Text = ((decimal)dtResult.Rows[0]["prnc"]).ToString("0.000");
             dgvData.DataSource = dtResult;
+
+            Logging.StartFirstLevel(1526);
+            Logging.Comment("По результатам выгрузка отчета по результатам инвентаризации обнаружены товары с превышением процента наценки");
+            foreach (DataRow row in dtResult.Rows)
+            {
+                Logging.Comment($"EAN: {row["ean"].ToString()}; " +
+                    $"Отдел (ID:{row["id_otdel"].ToString()};Наименование: {row["nameDeps"].ToString()});" +
+                    $"Товар (ID:{row["id_tovar"].ToString()};Наименование: {row["nameTovar"].ToString()});" +
+                    $"Цена закупки: {row["zcena"].ToString()};" +
+                    $"Цена продажи: {row["realRcena"].ToString()};" +
+                    $"ТТН: {row["ttn"].ToString()};" +
+                    $"Тип накладной: {row["nameOperand"].ToString()}");
+                
+            }
+            Logging.Comment($"Настройка процента наценки: {tbPrcn.Text}");
+            Logging.StopFirstLevel();
+
         }
 
         private void btPrint_Click(object sender, EventArgs e)
         {
             Logging.StartFirstLevel(79);
-            Logging.Comment("Проверка превышения процента наценки");
+            Logging.Comment("Произведена выгрузка отчета с превышения процента наценки");
+            Logging.Comment($"Количество выгруженных записей: {dtResult.Rows.Count}");
+            Logging.Comment($"Настройка процента наценки: {tbPrcn.Text}");
             Logging.StopFirstLevel();
 
             Nwuram.Framework.ToExcelNew.ExcelUnLoad report = new Nwuram.Framework.ToExcelNew.ExcelUnLoad("list-1");

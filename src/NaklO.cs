@@ -18,7 +18,7 @@ namespace Spisanie
         Procedures proc = new Procedures(ConnectionSettings.GetServer(), ConnectionSettings.GetDatabase(), ConnectionSettings.GetUsername(), ConnectionSettings.GetPassword(), ConnectionSettings.ProgramName);
     
         private int id, id_post, oldid_post, id_dep, id_ul;
-        private string oldttn;
+        private string oldttn, oldPost;
         private DataTable dtTovars;
 
         public frmNaklO(int inId, string inTtn, string inVnudok, DateTime inDatein, DateTime inDkor, string inEditor, int inid_post, string inPost, int inid_dep, string typeNack)
@@ -38,6 +38,7 @@ namespace Spisanie
             tbDateEdit.Text = inDkor.ToString();
             oldttn = inTtn;
             textBox1.Text = typeNack;
+            oldPost = tbPost.Text.Trim();
         }
 
         private void frmNakl_Load(object sender, EventArgs e)
@@ -181,51 +182,66 @@ namespace Spisanie
             int resultValidate = int.Parse(proc.ValidateNtypeorg(id_dep, int.Parse(cbUL.SelectedValue.ToString())).Rows[0]["result"].ToString());
 
             Logging.StartFirstLevel(26);
-            Logging.Comment("Начало редактирование накладной отгрузки id= " + id.ToString().Trim() + " из j_allprihod");  
-   
+            Logging.Comment("Начало редактирование накладной отгрузки id= " + id.ToString().Trim() + " из j_allprihod");
+            Logging.Comment("Заголовок накладной");
+            Logging.VariableChange("ТТН в накладной прихода", tbTTN.Text.Trim(), oldttn.Trim());
+            Logging.VariableChange("Код покупателя", id_post.ToString(), oldid_post.ToString());
+            Logging.VariableChange("Наименование покупателя", tbPost.ToString(), oldPost.ToString());
+            Logging.VariableChange("Код ЮЛ", cbUL.SelectedValue.ToString(), oldUl_int.ToString());
+            Logging.VariableChange("Наименование ЮЛ", cbUL.Text.ToString(), oldUl_string.ToString());
+
+
+            bool isEditTovar = false;
             foreach (DataRow dr in dtTovars.Rows)
             {
                 if (dr["rcena"].ToString() != dr["oldrcena"].ToString()
                      || dr["nds"].ToString() != dr["oldnds"].ToString())
                 {
+                    if (!isEditTovar)
+                    {
+                        Logging.Comment("Произведено редактирование товара");
+                        isEditTovar = true;
+                    }
+                    Logging.Comment($"EAN: {dr["ean"].ToString()}");
+                    Logging.Comment($"Товар ID:{dr["kodt"].ToString()}; Наименование:{dr["name"].ToString()}");
+
+                    Logging.VariableChange($"НДС ID", dr["nds"].ToString(), dr["oldnds"].ToString());
+                    Logging.VariableChange("Цены ", dr["rcena"].ToString(), dr["oldrcena"].ToString());
+
                     Logging.Comment("Изменение цены продажи в накладной отгрузки покупателю");
                     proc.ChangeAdvige(int.Parse(dr["id"].ToString()), decimal.Parse(dr["cena"].ToString()), decimal.Parse(dr["rcena"].ToString()), null, int.Parse(dr["nds"].ToString()), 2);
                    
                     if (TempValues.Error)
                     {
+                        Logging.Comment("Ошибка редактирование накладной отгрузки id= " + id.ToString().Trim() + " из j_allprihod");
+                        Logging.StopFirstLevel();
                         return;
-                    }
-
-                
-                    if (dr["rcena"].ToString() != dr["oldrcena"].ToString())
-                    {
-                        Logging.VariableChange("rcena", dr["rcena"].ToString(), dr["oldrcena"].ToString());
-                    }
+                    }                
                 }
-                proc.editNtypeOrgTovar(int.Parse(dr["kodt"].ToString()), int.Parse(cbUL.SelectedValue.ToString()), resultValidate); 
+                //proc.editNtypeOrgTovar(int.Parse(dr["kodt"].ToString()), int.Parse(cbUL.SelectedValue.ToString()), resultValidate); 
             }
             DataTable dt = proc.GetCloseDate();
             proc.SetRests(DateTime.Parse(tbDate.Text), DateTime.Parse(dt.Rows[0]["dinv"].ToString()), id_dep);
             Logging.Comment("Конец редактирование накладной отгрузки id= " + id.ToString().Trim() + " из j_allprihod");  
             Logging.StopFirstLevel();
 
-            if (oldid_post != id_post || oldttn.Trim() != tbTTN.Text.Trim())
-            {
-                Logging.StartFirstLevel(21);
-                Logging.Comment("Начало редактирование накладной отгрузки id= " + id.ToString().Trim() + " из j_allprihod");  
-                if (oldid_post != id_post)
-                {
-                    Logging.Comment("Изменение кода поставщика в накладной отгрузки покупателю");
-                    Logging.VariableChange("id_post", id_post.ToString(), oldid_post.ToString());
-                }
-                if (oldttn.Trim() != tbTTN.Text.Trim())
-                {
-                    Logging.Comment("Изменение ttn в накладной отгрузки покупателю");
-                    Logging.VariableChange("ttn", tbTTN.Text.Trim(), oldttn.Trim());
-                }
-                Logging.Comment("Конец редактирование накладной отгрузки id= " + id.ToString().Trim() + " из j_allprihod");  
-                Logging.StopFirstLevel();
-            } 
+            //if (oldid_post != id_post || oldttn.Trim() != tbTTN.Text.Trim())
+            //{
+            //    Logging.StartFirstLevel(21);
+            //    Logging.Comment("Начало редактирование накладной отгрузки id= " + id.ToString().Trim() + " из j_allprihod");  
+            //    if (oldid_post != id_post)
+            //    {
+            //        Logging.Comment("Изменение кода поставщика в накладной отгрузки покупателю");
+            //        Logging.VariableChange("id_post", id_post.ToString(), oldid_post.ToString());
+            //    }
+            //    if (oldttn.Trim() != tbTTN.Text.Trim())
+            //    {
+            //        Logging.Comment("Изменение ttn в накладной отгрузки покупателю");
+            //        Logging.VariableChange("ttn", tbTTN.Text.Trim(), oldttn.Trim());
+            //    }
+            //    Logging.Comment("Конец редактирование накладной отгрузки id= " + id.ToString().Trim() + " из j_allprihod");  
+            //    Logging.StopFirstLevel();
+            //} 
             #endregion
             
             wait.Visible = false;
@@ -369,6 +385,8 @@ namespace Spisanie
             ResizeSumElements();
         }
 
+        private int oldUl_int;
+        private string oldUl_string;
         private void initUL()
         {
             try {
@@ -382,9 +400,14 @@ namespace Spisanie
             cbUL.DisplayMember = "Abbriviation";
             cbUL.ValueMember = "nTypeOrg";
             if (id_ul != 0)
+            {
                 cbUL.SelectedValue = id_ul;
+                oldUl_string = cbUL.Text;
+            }
             else
                 cbUL.SelectedIndex = -1;
+
+            oldUl_int = id_ul;
         }
     }
 }

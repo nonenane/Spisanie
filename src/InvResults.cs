@@ -72,8 +72,15 @@ namespace Spisanie
                 try
                 {
                     HandmadeReport temp = new HandmadeReport();
-                    temp.AddSingleValue("Инвентаризация на " + dtpInvDate.Value.ToShortDateString() + " с возвратами", 1, 2);
+
+                    string shopName = "";
+                    if (Nwuram.Framework.Settings.Connection.ConnectionSettings.GetServer().ToLower().Contains("k21")) shopName = "Косышгина 21"; else shopName = "Хошимина 14";
+
+                    temp.AddSingleValue($"Инвентаризация на {dtpInvDate.Value.ToShortDateString()} с возвратами по магазину {shopName}", 1, 2);
                     temp.Merge(1, 2, 1, 9);
+                    temp.AddSingleValue($"Выгрузил {Nwuram.Framework.Settings.User.UserSettings.User.FullUsername}; Дата выгрузки: {DateTime.Now.ToString()}", 1, 2);
+                    temp.Merge(2, 2, 2, 9);
+                    temp.SetCellAlignmentToRight(2, 2, 2, 9);
 
                     temp.AddSingleValue("Отдел", 3, 2);
                     temp.AddSingleValue("Бухг. (тов. отчет)", 3, 3);
