@@ -61,7 +61,7 @@ namespace Spisanie
             int naklCount = 0;
             int doubles = 0;
             DataTable dtTovars = proc.GetInventTovars(id_dep);
-            if (dtTovars==null)
+            if (dtTovars == null)
             {
                 return;
             }
@@ -149,7 +149,7 @@ namespace Spisanie
                         }
                         else
                         {
-                            decimal allnetto = - decimal.Parse(dr["newnetto"].ToString()) + decimal.Parse(dr["oldnetto"].ToString());
+                            decimal allnetto = -decimal.Parse(dr["newnetto"].ToString()) + decimal.Parse(dr["oldnetto"].ToString());
                             DataRow[] drs = dtPrihZ.Select("id_tovar=" + dr["newid"].ToString());
                             if (drs.Count() > 0)
                             {
@@ -216,27 +216,34 @@ namespace Spisanie
             #region Формирование приходов
             while (dtPrihod.Rows.Count > 0)
             {
-                DataRow[] drsPrih = dtPrihod.Select("ntypeorg="+dtPrihod.Rows[0]["ntypeorg"].ToString());
+                DataRow[] drsPrih = dtPrihod.Select("ntypeorg=" + dtPrihod.Rows[0]["ntypeorg"].ToString());
                 Logging.StartFirstLevel(15);
-                DataTable dtTemp = proc.AddAllPrihod(dtpDate.Value.Date, 1, int.Parse(drsPrih[0]["ntypeorg"].ToString()),1);
-                if (dtTemp==null)
+                DataTable dtTemp = proc.AddAllPrihod(dtpDate.Value.Date, 1, int.Parse(drsPrih[0]["ntypeorg"].ToString()), 1);
+                if (dtTemp == null)
                 {
                     Logging.StartFirstLevel(8);
                     proc.DeleteNakls(id_dep, dtpDate.Value.Date);
                     Logging.StopFirstLevel();
                     return;
                 }
-                  Logging.Comment("Добавление шапки накладной прихода id= " +   dtTemp.Rows[0]["id"].ToString()+ " из j_allprihod");
-              
+                Logging.Comment("Добавление шапки накладной прихода id= " + dtTemp.Rows[0]["id"].ToString() + " из j_allprihod");
+                Logging.Comment($"Заголовок накладной: ID:{dtTemp.Rows[0]["id"].ToString()};" +
+                    $" ТТН:{dtTemp.Rows[0]["ttn"].ToString()};" +
+                    $" Номер накладной:{dtTemp.Rows[0]["id_custom"].ToString()};" +
+                    $" NtypeOrg:{dtTemp.Rows[0]["ntypeorg"].ToString()};" +
+                    $" Id_post:{dtTemp.Rows[0]["id_post"].ToString()}" +
+                    $" Id_otdel: {id_dep}");
+
+
                 naklCount++;
                 int i = 1;
                 int last_id_tov = 0;
                 int cntTov = 0;
                 DataRow[] drs = dtPrihZ.Select("id_tovar=" + last_id_tov.ToString());
+                Logging.Comment("Добавление тела накладной прихода " + dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ПП" + i.ToString().Trim() + " из j_prihod");
                 foreach (DataRow dr in drsPrih)
                 {
                     DataRow rCn = dtCens.Select("id_tovar=" + dr["id_tovar"].ToString())[0];
-                    Logging.Comment("Добавление тела накладной прихода " + dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ПП" + i.ToString().Trim() + " из j_prihod");
                     if (last_id_tov != int.Parse(dr["id_tovar"].ToString()))
                     {
                         last_id_tov = int.Parse(dr["id_tovar"].ToString());
@@ -244,8 +251,16 @@ namespace Spisanie
                         drs = dtPrihZ.Select("id_tovar=" + last_id_tov.ToString());
                     }
                     proc.AddPrihod(int.Parse(dtTemp.Rows[0]["id"].ToString()), int.Parse(dr["id_tovar"].ToString()), id_dep
-                                    , decimal.Parse(dr["netto"].ToString()), dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ПП" , i
-                                    , cntTov<drs.Count()?decimal.Parse(drs[cntTov]["zcena"].ToString()):0, decimal.Parse(rCn["rcena"].ToString()), int.Parse(rCn["id_nds"].ToString()), dtpDate.Value.Date);
+                                    , decimal.Parse(dr["netto"].ToString()), dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ПП", i
+                                    , cntTov < drs.Count() ? decimal.Parse(drs[cntTov]["zcena"].ToString()) : 0, decimal.Parse(rCn["rcena"].ToString()), int.Parse(rCn["id_nds"].ToString()), dtpDate.Value.Date);
+
+                    Logging.Comment($"id_tovar:{dr["id_tovar"].ToString()};" +
+                        $"netto:{dr["netto"].ToString()};" +
+                        $"zcena:{drs[cntTov]["zcena"].ToString()};" +
+                        $"rcena:{rCn["rcena"].ToString()};" +
+                        $"id_nds:{rCn["id_nds"].ToString()};" +
+                        $"Id_otdel:{id_dep}");
+
                     cntTov++;
                     if (TempValues.Error)
                     {
@@ -262,7 +277,7 @@ namespace Spisanie
                 Logging.StopFirstLevel();
             }
             #endregion
-             
+
             #region Формирование отгрузок
             dtOtgruz = editTable(dtOtgruz).Copy();
             int OtgruzCount = dtOtgruz.Rows.Count;
@@ -283,17 +298,24 @@ namespace Spisanie
                     return;
                 }
                 Logging.Comment("Добавление шапки накладной отгрузки id= " + dtTemp.Rows[0]["id"].ToString() + " из j_allprihod");
+                Logging.Comment($"Заголовок накладной: ID:{dtTemp.Rows[0]["id"].ToString()};" +
+                   $" ТТН:{dtTemp.Rows[0]["ttn"].ToString()};" +
+                   $" Номер накладной:{dtTemp.Rows[0]["id_custom"].ToString()};" +
+                   $" NtypeOrg:{dtTemp.Rows[0]["ntypeorg"].ToString()};" +
+                   $" Id_post:{dtTemp.Rows[0]["id_post"].ToString()}" +
+                   $" Id_otdel: {id_dep}");
 
                 naklCount++;
                 int i = 1;
                 int last_id_tov = 0;
                 int cntTov = 0;
+                Logging.Comment("Добавление тела накладной отгрузки " + dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ОП" + i.ToString().Trim() + " из j_otgruz");
                 DataRow[] drs = dtPrihZ.Select("id_tovar=" + last_id_tov.ToString());
                 foreach (DataRow dr in drsOtgruz)
                 {
-                    Logging.Comment("Добавление тела накладной отгрузки " + dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ОП" + i.ToString().Trim() + " из j_otgruz");
 
-                    DataRow rCn = dtCens.Select("id_tovar=" + dr["id_tovar"].ToString())[0];                   
+
+                    DataRow rCn = dtCens.Select("id_tovar=" + dr["id_tovar"].ToString())[0];
                     if (last_id_tov != int.Parse(dr["id_tovar"].ToString()))
                     {
                         last_id_tov = int.Parse(dr["id_tovar"].ToString());
@@ -301,10 +323,18 @@ namespace Spisanie
                         drs = dtPrihZ.Select("id_tovar=" + last_id_tov.ToString() + " and isCredit=" + dr["isCredit"].ToString());
                     }
                     proc.AddOtgruz(int.Parse(dtTemp.Rows[0]["id"].ToString()), int.Parse(dr["id_tovar"].ToString()), id_dep
-                                    , decimal.Parse(dr["netto"].ToString()),dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ОП", i
-                                    , cntTov < drs.Count() ? decimal.Parse(drs[cntTov]["zcena"].ToString()) : 0 
+                                    , decimal.Parse(dr["netto"].ToString()), dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ОП", i
+                                    , cntTov < drs.Count() ? decimal.Parse(drs[cntTov]["zcena"].ToString()) : 0
                                     , cntTov < drs.Count() ? decimal.Parse(drs[cntTov]["zcena"].ToString()) : 0, int.Parse(rCn["id_nds"].ToString()), dtpDate.Value.Date);
+                 
+                    Logging.Comment($"id_tovar:{dr["id_tovar"].ToString()};" +
+                         $"netto:{dr["netto"].ToString()};" +
+                         $"zcena:{drs[cntTov]["zcena"].ToString()};" +
+                         $"rcena:{rCn["rcena"].ToString()};" +
+                         $"id_nds:{rCn["id_nds"].ToString()};" +
+                         $"Id_otdel:{id_dep}");
                     cntTov++;
+
                     if (TempValues.Error)
                     {
                         Logging.StartFirstLevel(8);
@@ -327,7 +357,7 @@ namespace Spisanie
                 DataRow[] drsVozvKass = dtVozvKass.Select("ntypeorg=" + dtVozvKass.Rows[0]["ntypeorg"].ToString());
                 Logging.StartFirstLevel(19);
 
-                DataTable dtTemp = proc.AddAllPrihod(dtpDate.Value.Date, 4, int.Parse(drsVozvKass[0]["ntypeorg"].ToString()),1);
+                DataTable dtTemp = proc.AddAllPrihod(dtpDate.Value.Date, 4, int.Parse(drsVozvKass[0]["ntypeorg"].ToString()), 1);
                 if (dtTemp == null)
                 {
                     Logging.StartFirstLevel(8);
@@ -336,10 +366,16 @@ namespace Spisanie
                     return;
                 }
                 Logging.Comment("Добавление шапки накладной возврата с касс id= " + dtTemp.Rows[0]["id"].ToString() + " из j_allprihod");
+                Logging.Comment($"Заголовок накладной: ID:{dtTemp.Rows[0]["id"].ToString()};" +
+                       $" ТТН:{dtTemp.Rows[0]["ttn"].ToString()};" +
+                       $" Номер накладной:{dtTemp.Rows[0]["id_custom"].ToString()};" +
+                       $" NtypeOrg:{dtTemp.Rows[0]["ntypeorg"].ToString()};" +
+                       $" Id_post:{dtTemp.Rows[0]["id_post"].ToString()}" +
+                       $" Id_otdel: {id_dep}");
                 naklCount++;
 
                 //акт переоценки для возврата с касс - шапка
-                DataTable dtTempPereoc = proc.AddAllPrihod(dtpDate.Value.Date, 7, int.Parse(drsVozvKass[0]["ntypeorg"].ToString()),1);
+                DataTable dtTempPereoc = proc.AddAllPrihod(dtpDate.Value.Date, 7, int.Parse(drsVozvKass[0]["ntypeorg"].ToString()), 1);
                 if (dtTempPereoc == null)
                 {
                     Logging.StartFirstLevel(8);
@@ -355,7 +391,7 @@ namespace Spisanie
                 {
                     Logging.Comment("Добавление тела возврата с касс " + dtTemp.Rows[0]["vnudok"].ToString().Trim() + "БР" + i.ToString().Trim() + " из j_vozvkass");
                     DataRow rCn = dtCens.Select("id_tovar=" + dr["id_tovar"].ToString())[0];
-                    proc.AddVozvKass(int.Parse(dtTemp.Rows[0]["id"].ToString()), int.Parse(dr["id_tovar"].ToString()),id_dep
+                    proc.AddVozvKass(int.Parse(dtTemp.Rows[0]["id"].ToString()), int.Parse(dr["id_tovar"].ToString()), id_dep
                                     , decimal.Parse(dr["netto"].ToString()), dtTemp.Rows[0]["vnudok"].ToString().Trim() + "БР" + i.ToString().Trim()
                                     , decimal.Parse(rCn["zcena"].ToString()), decimal.Parse(rCn["rcena"].ToString()));
                     if (TempValues.Error)
@@ -371,6 +407,13 @@ namespace Spisanie
                     proc.AddPereoc(int.Parse(dtTempPereoc.Rows[0]["id"].ToString()), int.Parse(dr["id_tovar"].ToString()), id_dep
                                    , decimal.Parse(dr["netto"].ToString()), dtTempPereoc.Rows[0]["vnudok"].ToString().Trim() + "ОЦ" + i.ToString().Trim()
                                    , decimal.Parse(rCn["rcena"].ToString()), decimal.Parse(rCn["zcena"].ToString()), int.Parse(rCn["id_nds"].ToString()));
+
+                    Logging.Comment($"id_tovar:{dr["id_tovar"].ToString()};" +
+                         $"netto:{dr["netto"].ToString()};" +
+                         $"zcena:{rCn["zcena"].ToString()};" +
+                         $"rcena:{rCn["rcena"].ToString()};" +
+                         $"id_nds:{rCn["id_nds"].ToString()};" +
+                         $"Id_otdel:{id_dep}");
                     if (TempValues.Error)
                     {
                         Logging.StartFirstLevel(8);
@@ -384,14 +427,14 @@ namespace Spisanie
                     dtVozvKass.Rows.Remove(dr);
                 }
                 dtTemp.Dispose();
-                Logging.Comment("Завершено добавление накладной возврата с касс id= " + dtTemp.Rows[0]["id"].ToString()+" из j_allprihod");
+                Logging.Comment("Завершено добавление накладной возврата с касс id= " + dtTemp.Rows[0]["id"].ToString() + " из j_allprihod");
                 Logging.Comment("Завершено добавление накладной переоценки id= " + dtTempPereoc.Rows[0]["id"].ToString() + " из j_allprihod");
                 Logging.StopFirstLevel();
             }
             #endregion
 
             #region Формирование списаний
-            dtSpis = editTable(dtSpis).Copy();            
+            dtSpis = editTable(dtSpis).Copy();
             while (dtSpis.Rows.Count > 0)
             {
                 DataRow[] drsSpis = dtSpis.Select("ntypeorg=" + dtSpis.Rows[0]["ntypeorg"].ToString() + " and isCredit=" + dtSpis.Rows[0]["isCredit"].ToString());
@@ -399,7 +442,7 @@ namespace Spisanie
                 Logging.StartFirstLevel(17);
 
                 DataTable dtTemp = proc.AddAllPrihod(dtpDate.Value.Date, 5, int.Parse(drsSpis[0]["ntypeorg"].ToString()), int.Parse(drsSpis[0]["isCredit"].ToString()));
-                if (dtTemp==null)
+                if (dtTemp == null)
                 {
                     Logging.StartFirstLevel(8);
                     proc.DeleteNakls(id_dep, dtpDate.Value.Date);
@@ -408,17 +451,31 @@ namespace Spisanie
                 }
 
                 Logging.Comment("Добавление шапки акта списания id= " + dtTemp.Rows[0]["id"].ToString() + " из j_allprihod");
-               
+                Logging.Comment($"Заголовок накладной: ID:{dtTemp.Rows[0]["id"].ToString()};" +
+                   $" ТТН:{dtTemp.Rows[0]["ttn"].ToString()};" +
+                   $" Номер накладной:{dtTemp.Rows[0]["id_custom"].ToString()};" +
+                   $" NtypeOrg:{dtTemp.Rows[0]["ntypeorg"].ToString()};" +
+                   $" Id_post:{dtTemp.Rows[0]["id_post"].ToString()}" +
+                   $" Id_otdel: {id_dep}");
+
                 naklCount++;
                 int i = 1;
+                Logging.Comment("Добавление тела акта списания " + dtTemp.Rows[0]["vnudok"].ToString().Trim() + "АС" + i.ToString().Trim() + " из j_spis0.");
                 foreach (DataRow dr in drsSpis)
                 {
-                    Logging.Comment("Добавление тела акта списания " + dtTemp.Rows[0]["vnudok"].ToString().Trim() + "АС" + i.ToString().Trim()+" из j_spis0.");
                     
+
                     DataRow rCn = dtCens.Select("id_tovar=" + dr["id_tovar"].ToString())[0];
-                    proc.AddSpis(int.Parse(dtTemp.Rows[0]["id"].ToString()), int.Parse(dr["id_tovar"].ToString()),id_dep
+                    proc.AddSpis(int.Parse(dtTemp.Rows[0]["id"].ToString()), int.Parse(dr["id_tovar"].ToString()), id_dep
                                 , decimal.Parse(dr["netto"].ToString()), dtTemp.Rows[0]["vnudok"].ToString().Trim() + "АС" + i.ToString().Trim()
                                 , decimal.Parse(rCn["zcena"].ToString()), decimal.Parse(rCn["rcena"].ToString()), int.Parse(rCn["id_nds"].ToString()));
+
+                    Logging.Comment($"id_tovar:{dr["id_tovar"].ToString()};" +
+                        $"netto:{dr["netto"].ToString()};" +
+                        $"zcena:{rCn["zcena"].ToString()};" +
+                        $"rcena:{rCn["rcena"].ToString()};" +
+                        $"id_nds:{rCn["id_nds"].ToString()};" +
+                        $"Id_otdel:{id_dep}");
                     if (TempValues.Error)
                     {
                         Logging.StartFirstLevel(8);
@@ -441,7 +498,7 @@ namespace Spisanie
             {
                 DataRow[] drsPereoc = dtPereoc.Select("ntypeorg=" + dtPereoc.Rows[0]["ntypeorg"].ToString());
                 Logging.StartFirstLevel(18);
-                DataTable dtTemp = proc.AddAllPrihod(dtpDate.Value.Date, 2, int.Parse(drsPereoc[0]["ntypeorg"].ToString()),1);
+                DataTable dtTemp = proc.AddAllPrihod(dtpDate.Value.Date, 2, int.Parse(drsPereoc[0]["ntypeorg"].ToString()), 1);
                 if (dtTemp == null)
                 {
                     Logging.StartFirstLevel(8);
@@ -452,14 +509,22 @@ namespace Spisanie
 
                 Logging.Comment("Добавление шапки акта переоценки id= " + dtTemp.Rows[0]["id"].ToString() + " из j_allprihod");
 
+                Logging.Comment($"Заголовок накладной: ID:{dtTemp.Rows[0]["id"].ToString()};" +
+                   $" ТТН:{dtTemp.Rows[0]["ttn"].ToString()};" +
+                   $" Номер накладной:{dtTemp.Rows[0]["id_custom"].ToString()};" +
+                   $" NtypeOrg:{dtTemp.Rows[0]["ntypeorg"].ToString()};" +
+                   $" Id_post:{dtTemp.Rows[0]["id_post"].ToString()}" +
+                   $" Id_otdel: {id_dep}");
+
                 naklCount++;
                 int i = 1;
                 int last_id_tov = 0;
                 int cntTov = 0;
+                Logging.Comment("Добавление тела акта переоценки " + dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ОЦ" + i.ToString().Trim() + " из j_pereoc");
                 DataRow[] drs = dtPrihZ.Select("id_tovar=" + last_id_tov.ToString());
                 foreach (DataRow dr in drsPereoc)
                 {
-                    Logging.Comment("Добавление тела акта переоценки " + dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ОЦ" + i.ToString().Trim() + " из j_pereoc");
+                    
 
                     DataRow rCn = dtCens.Select("id_tovar=" + dr["id_tovar"].ToString())[0];
                     if (last_id_tov != int.Parse(dr["id_tovar"].ToString()))
@@ -471,6 +536,12 @@ namespace Spisanie
                     proc.AddPereoc(int.Parse(dtTemp.Rows[0]["id"].ToString()), int.Parse(dr["id_tovar"].ToString()), id_dep
                                     , decimal.Parse(dr["netto"].ToString()), dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ОЦ" + i.ToString().Trim()
                                     , cntTov < drs.Count() ? decimal.Parse(drs[cntTov]["zcena"].ToString()) : 0, decimal.Parse(rCn["rcena"].ToString()), int.Parse(rCn["id_nds"].ToString()));
+                    Logging.Comment($"id_tovar:{dr["id_tovar"].ToString()};" +
+                         $"netto:{dr["netto"].ToString()};" +
+                         $"zcena:{drs[cntTov]["zcena"].ToString()};" +
+                         $"rcena:{rCn["rcena"].ToString()};" +
+                         $"id_nds:{rCn["id_nds"].ToString()};" +
+                         $"Id_otdel:{id_dep}");
                     cntTov++;
                     if (TempValues.Error)
                     {
@@ -494,8 +565,8 @@ namespace Spisanie
                 DataRow[] drsNedost = dtNedost.Select("ntypeorg=" + dtNedost.Rows[0]["ntypeorg"].ToString());
                 int NtypeOrg = int.Parse(drsNedost[0]["ntypeorg"].ToString());
                 Logging.StartFirstLevel(18);
-                DataTable dtTemp = proc.AddAllPrihod(dtpDate.Value.Date, 6, int.Parse(drsNedost[0]["ntypeorg"].ToString()),1);
-                if (dtTemp==null)
+                DataTable dtTemp = proc.AddAllPrihod(dtpDate.Value.Date, 6, int.Parse(drsNedost[0]["ntypeorg"].ToString()), 1);
+                if (dtTemp == null)
                 {
                     Logging.StartFirstLevel(8);
                     proc.DeleteNakls(id_dep, dtpDate.Value.Date);
@@ -503,6 +574,13 @@ namespace Spisanie
                     return;
                 }
                 Logging.Comment("Добавление шапки акта переоценки по недосдаче id= " + dtTemp.Rows[0]["id"].ToString() + " из j_allprihod");
+
+                Logging.Comment($"Заголовок накладной: ID:{dtTemp.Rows[0]["id"].ToString()};" +
+                   $" ТТН:{dtTemp.Rows[0]["ttn"].ToString()};" +
+                   $" Номер накладной:{dtTemp.Rows[0]["id_custom"].ToString()};" +
+                   $" NtypeOrg:{dtTemp.Rows[0]["ntypeorg"].ToString()};" +
+                   $" Id_post:{dtTemp.Rows[0]["id_post"].ToString()}" +
+                   $" Id_otdel: {id_dep}");
                 naklCount++;
                 int i = 1;
                 decimal s = 0;
@@ -510,11 +588,11 @@ namespace Spisanie
                 {
                     if (Math.Abs(s + decimal.Parse(dr["delta"].ToString())) > 30000)
                     {
-                        decimal k = decimal.Parse(dr["delta"].ToString());                        
+                        decimal k = decimal.Parse(dr["delta"].ToString());
                         while (k != 0)
                         {
                             dtTemp = proc.AddAllPrihod(dtpDate.Value.Date, 6, NtypeOrg, 1);
-                            if (dtTemp==null)
+                            if (dtTemp == null)
                             {
                                 Logging.StartFirstLevel(8);
                                 proc.DeleteNakls(id_dep, dtpDate.Value.Date);
@@ -541,7 +619,7 @@ namespace Spisanie
                                 if (k < -30000)
                                 {
                                     doubles++;
-                                    tdelta=-30000;
+                                    tdelta = -30000;
                                     s += k;
                                     k += 30000;
                                     if (k > 0)
@@ -551,28 +629,37 @@ namespace Spisanie
                                 }
                                 else
                                 {
-                                    tdelta=k;
+                                    tdelta = k;
                                     s += k;
                                     k = 0;
                                 }
                             }
-                           
-                            Logging.Comment("Добавление тела акта переоценки по недосдаче " + dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ОЦ" + i.ToString().Trim() +" из j_pereoc");
 
-                            
+                            Logging.Comment("Добавление тела акта переоценки по недосдаче " + dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ОЦ" + i.ToString().Trim() + " из j_pereoc");
+
+
                             int ttype = 0;
                             if (decimal.Parse(dr["netto"].ToString()) != 0)
                             {
-                                ttype=1;
+                                ttype = 1;
                             }
                             else
                             {
-                                ttype=2;
+                                ttype = 2;
                             }
                             DataRow rCn = dtCens.Select("id_tovar=" + dr["id_tovar"].ToString())[0];
-                            proc.AddNedost(int.Parse(dtTemp.Rows[0]["id"].ToString()), int.Parse(dr["id_tovar"].ToString()),id_dep
+                            proc.AddNedost(int.Parse(dtTemp.Rows[0]["id"].ToString()), int.Parse(dr["id_tovar"].ToString()), id_dep
                                             , decimal.Parse(dr["netto"].ToString()), tdelta, dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ОЦ" + i.ToString().Trim(), ttype
                                             , decimal.Parse(rCn["zcena"].ToString()), decimal.Parse(rCn["rcena"].ToString()), int.Parse(rCn["id_nds"].ToString()));
+
+
+                            Logging.Comment($"id_tovar:{dr["id_tovar"].ToString()};" +
+                                 $"netto:{dr["netto"].ToString()};" +
+                                 $"zcena:{rCn["zcena"].ToString()};" +
+                                 $"rcena:{rCn["rcena"].ToString()};" +
+                                 $"id_nds:{rCn["id_nds"].ToString()};" +
+                                 $"Id_otdel:{id_dep}");
+
                             if (TempValues.Error)
                             {
                                 return;
@@ -585,20 +672,28 @@ namespace Spisanie
                         int ttype = 0;
                         if (decimal.Parse(dr["netto"].ToString()) != 0)
                         {
-                           ttype=1;
+                            ttype = 1;
                         }
                         else
                         {
-                            ttype=2;
+                            ttype = 2;
                         }
                         Logging.Comment("Добавление тела акта переоценки по недосдаче " +
                                         dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ОЦ" + i.ToString().Trim() + " из j_pereoc");
-                        
+
                         DataRow rCn = dtCens.Select("id_tovar=" + dr["id_tovar"].ToString())[0];
-                        proc.AddNedost(int.Parse(dtTemp.Rows[0]["id"].ToString()), int.Parse(dr["id_tovar"].ToString()),id_dep
+                        proc.AddNedost(int.Parse(dtTemp.Rows[0]["id"].ToString()), int.Parse(dr["id_tovar"].ToString()), id_dep
                                         , decimal.Parse(dr["netto"].ToString()), decimal.Parse(dr["delta"].ToString())
                                         , dtTemp.Rows[0]["vnudok"].ToString().Trim() + "ОЦ" + i.ToString().Trim(), ttype
                                         , decimal.Parse(rCn["zcena"].ToString()), decimal.Parse(rCn["rcena"].ToString()), int.Parse(rCn["id_nds"].ToString()));
+
+                        Logging.Comment($"id_tovar:{dr["id_tovar"].ToString()};" +
+                             $"netto:{dr["netto"].ToString()};" +
+                             $"zcena:{rCn["zcena"].ToString()};" +
+                             $"rcena:{rCn["rcena"].ToString()};" +
+                             $"id_nds:{rCn["id_nds"].ToString()};" +
+                             $"Id_otdel:{id_dep}");
+
                         if (TempValues.Error)
                         {
                             return;
@@ -609,7 +704,7 @@ namespace Spisanie
                     dtNedost.Rows.Remove(dr);
                 }
                 dtTemp.Dispose();
-                Logging.Comment("Завершено добавление шапки акта переоценки по недосдаче id= " + dtTemp.Rows[0]["id"].ToString()+" из j_allprihod");
+                Logging.Comment("Завершено добавление шапки акта переоценки по недосдаче id= " + dtTemp.Rows[0]["id"].ToString() + " из j_allprihod");
                 Logging.StopFirstLevel();
             }
             #endregion
